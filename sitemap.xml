@@ -2,7 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 <url> <loc>https://docs.poppy-project.org/undefinedREADME.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://docs.poppy-project.org/undefinedgetting-started/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>https://docs.poppy-project.org/undefinedgetting-started/build.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://docs.poppy-project.org/undefinedgetting-started/connect.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://docs.poppy-project.org/undefinedgetting-started/program-the-robot.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://docs.poppy-project.org/undefinedgetting-started/visualize.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
@@ -18,9 +17,16 @@
 <url> <loc>https://docs.poppy-project.org/undefinedassembly-guides/ergo-jr/electronic-assembly.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://docs.poppy-project.org/undefinedassembly-guides/ergo-jr/motor-configuration.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://docs.poppy-project.org/undefinedassembly-guides/ergo-jr/mechanical-construction.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>https://docs.poppy-project.org/undefinedassembly-guides/poppycustom/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>https://docs.poppy-project.org/undefinedassembly-guides/poppycustom/dragster-mini/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://docs.poppy-project.org/undefinedassembly-guides/poppy-humanoid/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://docs.poppy-project.org/undefinedassembly-guides/poppy-humanoid/warnings.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://docs.poppy-project.org/undefinedassembly-guides/poppy-humanoid/bom.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://docs.poppy-project.org/undefinedassembly-guides/poppy-humanoid/dynamixel_hardware.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://docs.poppy-project.org/undefinedassembly-guides/poppy-humanoid/addressing_dynamixel.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://docs.poppy-project.org/undefinedassembly-guides/poppy-humanoid/arms_assembly.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://docs.poppy-project.org/undefinedassembly-guides/poppy-humanoid/trunk_assembly.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://docs.poppy-project.org/undefinedassembly-guides/poppy-humanoid/legs_assembly.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://docs.poppy-project.org/undefinedassembly-guides/poppy-humanoid/head_assembly.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://docs.poppy-project.org/undefinedassembly-guides/poppy-humanoid/wiring_arrangement.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://docs.poppy-project.org/undefinedassembly-guides/poppy-torso/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://docs.poppy-project.org/undefinedprogramming/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://docs.poppy-project.org/undefinedprogramming/snap.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
@@ -43,7 +49,6 @@
 <url> <loc>https://docs.poppy-project.org/undefinedappendix/faq.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://docs.poppy-project.org/undefinedREADME.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://docs.poppy-project.org/undefinedgetting-started/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>https://docs.poppy-project.org/undefinedgetting-started/build.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://docs.poppy-project.org/undefinedgetting-started/connect.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://docs.poppy-project.org/undefinedgetting-started/program-the-robot.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://docs.poppy-project.org/undefinedgetting-started/visualize.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
@@ -59,8 +64,6 @@
 <url> <loc>https://docs.poppy-project.org/undefinedassembly-guides/ergo-jr/electronic-assembly.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://docs.poppy-project.org/undefinedassembly-guides/ergo-jr/motor-configuration.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://docs.poppy-project.org/undefinedassembly-guides/ergo-jr/mechanical-construction.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>https://docs.poppy-project.org/undefinedassembly-guides/poppycustom/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>https://docs.poppy-project.org/undefinedassembly-guides/poppycustom/dragster-mini/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://docs.poppy-project.org/undefinedassembly-guides/poppy-humanoid/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://docs.poppy-project.org/undefinedassembly-guides/poppy-torso/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://docs.poppy-project.org/undefinedprogramming/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>

@@ -1,0 +1,1180 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Dynamixel hardware · Documentation of the Poppy Platform</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-page-toc/page-toc.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="addressing_dynamixel.html" />
+    
+    
+    <link rel="prev" href="bom.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Getting started</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    About this documentation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../getting-started/">
+            
+                <a href="../../getting-started/">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    Use my assembled robot
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../getting-started/connect.html">
+            
+                <a href="../../getting-started/connect.html">
+            
+                    
+                        <b>1.2.1.</b>
+                    
+                    Connect to the robot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../getting-started/program-the-robot.html">
+            
+                <a href="../../getting-started/program-the-robot.html">
+            
+                    
+                        <b>1.2.2.</b>
+                    
+                    Program the robot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../getting-started/visualize.html">
+            
+                <a href="../../getting-started/visualize.html">
+            
+                    
+                        <b>1.2.3.</b>
+                    
+                    Visualize
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../getting-started/example-of-projects.html">
+            
+                <a href="../../getting-started/example-of-projects.html">
+            
+                    
+                        <b>1.2.4.</b>
+                    
+                    Examples of projects
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Software installation</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../installation/">
+            
+                <a href="../../installation/">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../../installation/install-zeroconf.html">
+            
+                <a href="../../installation/install-zeroconf.html">
+            
+                    
+                        <b>2.1.1.</b>
+                    
+                    Install Bonjour/Zeroconf
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../../installation/burn-an-image-file.html">
+            
+                <a href="../../installation/burn-an-image-file.html">
+            
+                    
+                        <b>2.1.2.</b>
+                    
+                    Download and burn the system image
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../../installation/install-poppy-softwares.html">
+            
+                <a href="../../installation/install-poppy-softwares.html">
+            
+                    
+                        <b>2.1.3.</b>
+                    
+                    Install Poppy softwares
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../../installation/install-vrep.html">
+            
+                <a href="../../installation/install-vrep.html">
+            
+                    
+                        <b>2.1.4.</b>
+                    
+                    Install V-REP simulator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../../installation/install-drivers.html">
+            
+                <a href="../../installation/install-drivers.html">
+            
+                    
+                        <b>2.1.5.</b>
+                    
+                    Install USB to serial drivers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../../installation/install-a-poppy-board.html">
+            
+                <a href="../../installation/install-a-poppy-board.html">
+            
+                    
+                        <b>2.1.6.</b>
+                    
+                    Install a Poppy Board
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Robot assembly</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../ergo-jr/">
+            
+                <a href="../ergo-jr/">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    Assemble the Ergo Jr
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../ergo-jr/electronic-assembly.html">
+            
+                <a href="../ergo-jr/electronic-assembly.html">
+            
+                    
+                        <b>3.1.1.</b>
+                    
+                    Electronic assembly
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../ergo-jr/motor-configuration.html">
+            
+                <a href="../ergo-jr/motor-configuration.html">
+            
+                    
+                        <b>3.1.2.</b>
+                    
+                    Motor configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../ergo-jr/mechanical-construction.html">
+            
+                <a href="../ergo-jr/mechanical-construction.html">
+            
+                    
+                        <b>3.1.3.</b>
+                    
+                    Hardware construction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    Assemble the Poppy Humanoid
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="warnings.html">
+            
+                <a href="warnings.html">
+            
+                    
+                        <b>3.2.1.</b>
+                    
+                    PRIMORDIAL warnings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="bom.html">
+            
+                <a href="bom.html">
+            
+                    
+                        <b>3.2.2.</b>
+                    
+                    Bill Of Material (BOM)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.2.3" data-path="dynamixel_hardware.html">
+            
+                <a href="dynamixel_hardware.html">
+            
+                    
+                        <b>3.2.3.</b>
+                    
+                    Dynamixel hardware
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.4" data-path="addressing_dynamixel.html">
+            
+                <a href="addressing_dynamixel.html">
+            
+                    
+                        <b>3.2.4.</b>
+                    
+                    Configuring the Dynamixel motors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.5" data-path="arms_assembly.html">
+            
+                <a href="arms_assembly.html">
+            
+                    
+                        <b>3.2.5.</b>
+                    
+                    Arms assembly
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.6" data-path="trunk_assembly.html">
+            
+                <a href="trunk_assembly.html">
+            
+                    
+                        <b>3.2.6.</b>
+                    
+                    Full torso assembly
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.7" data-path="legs_assembly.html">
+            
+                <a href="legs_assembly.html">
+            
+                    
+                        <b>3.2.7.</b>
+                    
+                    Legs assembly
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.8" data-path="head_assembly.html">
+            
+                <a href="head_assembly.html">
+            
+                    
+                        <b>3.2.8.</b>
+                    
+                    Head assembly
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.9" data-path="wiring_arrangement.html">
+            
+                <a href="wiring_arrangement.html">
+            
+                    
+                        <b>3.2.9.</b>
+                    
+                    Wiring arrangement
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../poppy-torso/">
+            
+                <a href="../poppy-torso/">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    Assemble the Poppy Torso
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Robot programming</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../../programming/">
+            
+                <a href="../../programming/">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    Programming
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="../../programming/snap.html">
+            
+                <a href="../../programming/snap.html">
+            
+                    
+                        <b>4.1.1.</b>
+                    
+                    Programming with Snap!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="../../programming/notebooks.html">
+            
+                <a href="../../programming/notebooks.html">
+            
+                    
+                        <b>4.1.2.</b>
+                    
+                    Usage of Jupyter notebooks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" data-path="../../programming/python.html">
+            
+                <a href="../../programming/python.html">
+            
+                    
+                        <b>4.1.3.</b>
+                    
+                    Programming in Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4" data-path="../../programming/rest.html">
+            
+                <a href="../../programming/rest.html">
+            
+                    
+                        <b>4.1.4.</b>
+                    
+                    Robots APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.5" data-path="../../demo-activities/">
+            
+                <a href="../../demo-activities/">
+            
+                    
+                        <b>4.1.5.</b>
+                    
+                    Activities
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.6" data-path="../../demo-activities/snap4arduino.html">
+            
+                <a href="../../demo-activities/snap4arduino.html">
+            
+                    
+                        <b>4.1.6.</b>
+                    
+                    Link with Snap4Arduino
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../../from-simulation-to-real-robot/">
+            
+                <a href="../../from-simulation-to-real-robot/">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    From simulation to real robot
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.1" data-path="../../from-simulation-to-real-robot/using-jupyter.html">
+            
+                <a href="../../from-simulation-to-real-robot/using-jupyter.html">
+            
+                    
+                        <b>4.2.1.</b>
+                    
+                    Program with Jupyter notebooks on the real robot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.2" data-path="../../from-simulation-to-real-robot/using-snap.html">
+            
+                <a href="../../from-simulation-to-real-robot/using-snap.html">
+            
+                    
+                        <b>4.2.2.</b>
+                    
+                    Snap! on the real robot
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../../software-libraries/">
+            
+                <a href="../../software-libraries/">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    Software libraries documentation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.3.1" data-path="../../software-libraries/pypot.html">
+            
+                <a href="../../software-libraries/pypot.html">
+            
+                    
+                        <b>4.3.1.</b>
+                    
+                    Pypot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.2" data-path="../../software-libraries/poppy-creature.html">
+            
+                <a href="../../software-libraries/poppy-creature.html">
+            
+                    
+                        <b>4.3.2.</b>
+                    
+                    Poppy-creature
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.3" data-path="../../software-libraries/poppy-ergo-jr.html">
+            
+                <a href="../../software-libraries/poppy-ergo-jr.html">
+            
+                    
+                        <b>4.3.3.</b>
+                    
+                    Poppy Ergo Jr
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.4" data-path="../../software-libraries/poppy-humanoid.html">
+            
+                <a href="../../software-libraries/poppy-humanoid.html">
+            
+                    
+                        <b>4.3.4.</b>
+                    
+                    Poppy Humanoid
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.5" data-path="../../software-libraries/poppy-torso.html">
+            
+                <a href="../../software-libraries/poppy-torso.html">
+            
+                    
+                        <b>4.3.5.</b>
+                    
+                    Poppy Torso
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Appendix</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../../appendix/network.html">
+            
+                <a href="../../appendix/network.html">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    Network
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../../appendix/contribute.html">
+            
+                <a href="../../appendix/contribute.html">
+            
+                    
+                        <b>5.2.</b>
+                    
+                    Contribute
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../../appendix/faq.html">
+            
+                <a href="../../appendix/faq.html">
+            
+                    
+                        <b>5.3.</b>
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Dynamixel hardware</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="3-mounting-dynamixel-horns">3. Mounting Dynamixel horns</h1>
+<p>The Poppy Humanoid robot is mainly built with <a href="http://www.generationrobots.com/en/401858-servomotor-dynamixel-mx-28at.html" target="_blank">MX-28AT Dynamixel servomotors</a> (MX-28T are the previous version and can be used without any problem). </p>
+<p>The other servomotors are MX-64T which are bigger and stronger, and AX-12A or AX-18 which are smaller, used only for the head.</p>
+<p>Each Dynamixel servomotor embeds an electronic board allowing it to receive different kind of orders (about goal, torque...) and communicate with other Dynamixel servos. Therefore, you can chain up several Dynamixel servomotors (each with a different ID) and command them all from one end of the chain: each servomotor will pass the orders to the next one.</p>
+<p><img src="img/daisy_link.JPG" alt="image"></p>
+<h2 id="parts-used-along-with-dynamixel-motors">Parts used along with Dynamixel motors</h2>
+<p>Here is a table of the parts needed to mount the horns of the motors.</p>
+<table>
+<thead>
+<tr>
+<th>Servomotor</th>
+<th style="text-align:center">main horn</th>
+<th style="text-align:center">free horn</th>
+<th style="text-align:center">big horn screw</th>
+<th style="text-align:center">horn screws</th>
+<th style="text-align:center">case screws</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AX12-A</td>
+<td style="text-align:center">none</td>
+<td style="text-align:center">none</td>
+<td style="text-align:center">M3x10mm</td>
+<td style="text-align:center">M2</td>
+<td style="text-align:center">M2</td>
+</tr>
+<tr>
+<td>MX28</td>
+<td style="text-align:center">HN07-N101</td>
+<td style="text-align:center">HN07-I101</td>
+<td style="text-align:center">M2.5x8mm</td>
+<td style="text-align:center">M2x3mm</td>
+<td style="text-align:center">M2.5x6mm</td>
+</tr>
+<tr>
+<td>MX64</td>
+<td style="text-align:center">HN05-N102</td>
+<td style="text-align:center">HN05-I101</td>
+<td style="text-align:center">M3x8mm</td>
+<td style="text-align:center">M2.5x4mm</td>
+<td style="text-align:center">M2.5x6mm</td>
+</tr>
+</tbody>
+</table>
+<p>You will need an allen wrench of size 1.5mm for M2 screws, 2mm for M2.5 screws and 2.5mm for M3 screws. The longer M2 screws need a Phillips screwdriver.</p>
+<h2 id="mounting-and-aligning-the-active-horns">Mounting and aligning the active horns</h2>
+<p>Don&apos;t mount the horns now, you should do it all along the assembly when a motor is needed. This is only general information, not all motors need to be mounted the same way: with or without rear wheel, with or without nuts ; this will be indicated in the videos for each specific motor.</p>
+<p>When you receive your Dynamixel servomotors, the horns and their washers are not mounted. The latter are included in the same packaging if the servo is packaged alone or they are packaged separately for 6-pieces bulks.</p>
+<p>On top of the active motor axis (the axis that is driven by the motor), you will mount the horn and the washer (the white washer for the MX-28). As you already read in the <a href="warning.md">PRIMORDIAL warnings #1 and #3</a> be very careful about the horn alignement both with the active motor axis and the structural part (3D printed). Here are other views of what you need to achieve:</p>
+<p><img src="img/zero.JPG" title="Align the motor horn with axis" style="width: 350px;">
+<img src="img/zero2.JPG" title="Align the motor horn with axis" style="width: 350px;"></p>
+<p>Then you can force on the horn to insert it and use a screw (the longest model) with very few thread locker to fix it. But, again, <strong>this is definitive</strong>.
+<img src="img/MX28N.JPG" title="Active horn assembled in zero position with a screw" style="width: 350px;"></p>
+<h3 id="if-you-are-unsure-that-you-have-well-aligned-the-active-horn">If you are unsure that you have well aligned the active horn</h3>
+<p>If you are unsure that you have well aligned the horn: Install <a href="../../installation/install-poppy-softwares.html">Poppy software</a> and invoke <a href="../../TODO">Poppy Configure</a> with the name of a motor of the same model (MX28/MX-28AT or MX-64) so that it goes to its zero angle.</p>
+<p>If, after setting your motor to zero angle, the horn does not point upwards as in the image below, then you made a mistake in horn alignment.</p>
+<p><img src="../../img/humanoid/mx28-zero.jpg" title="Well-aligned motor horn in zero angle" style="width: 350px;">
+<img src="img/zero3.JPG" title="Axis in zero degree position has its single dot facing upward" style="width: 350px;"></p>
+<h3 id="if-you-made-a-mistake-in-the-active-horn-alignment">If you made a mistake in the active horn alignment</h3>
+<p>If you assembled the horn and forced without aligning it correctly, you have two solutions:</p>
+<ul>
+<li>The offset can be compensated from software <a href="https://github.com/poppy-project/poppy-humanoid/blob/d1e5c8d58eac6358ef26870054e4ccffda9b0bab/software/poppy_humanoid/configuration/poppy_humanoid.json#L75" target="_blank">in the configuration file of your creature</a>, but this is an advanced operation and you first need to know how much the offset is</li>
+<li>You can attempt to remove the horn. You will necessarily damage the motor, so be very cautious in order to minimize damages. Proceed as follows:<ul>
+<li>Use a flat screwdriver with a tip of about 2mm in length</li>
+<li>Remove the center screw if any and carefully slip the tip under the horn</li>
+<li>Apply a slight rotative pressure pressure on you screwdriver</li>
+<li>Rotate the horn of 45&#xB0; and apply another pressure there as shown on the picture</li>
+<li>Pursue pressures evert 45&#xB0; all around the horn by keeping your screwdriver always inserted at the same location in order to minimize damages of the black chassis and the washer</li>
+<li>When the horn is disengaged of about 2mm from the motor (you screwdriver is too narrow to force again), you should be able to pull the horn by hand by pulling very straight and shaking slightly</li>
+<li>Re-insert then the active horn properly</li>
+</ul>
+</li>
+</ul>
+<p><img src="../../img/humanoid/remove_horn.jpg" title="Gently remove the misaligned horn" style="width: 250px;"></p>
+<h3 id="particular-cases-of-horn-alignment-according-to-motor-types">Particular cases of horn alignment according to motor types</h3>
+<p>Horns of motors <strong>AX-12 and AX-18</strong> are also oriented but motors are shipped with the horn pre-assembled so there is no danger.
+Horns of motors <strong>MX-64 and MX-64AT</strong> are also oriented but horns can be removed easily with no damage to the motor.
+Thus, the assembly of motors <strong>MX-32 and MX-32AT</strong> are the most at risk.</p>
+<h2 id="mounting-the-rear-horn-free-wheel">Mounting the rear horn (free wheel)</h2>
+<p>In most cases, on the other side of the active/driven horn with the 3 dots, you will have to mount another horn with ball bearings.</p>
+<p>There is no important alignement on this side, this is just a free wheel. Insert a long screw with very few thread locker. However check that this horn rotate very easily by hand, just as a free wheel would rotate when mounted on a ball bearing. A locked free wheel would prevent the motor from moving.</p>
+<p><img src="img/MX64I1.JPG" title="Ball bearing of the free wheel" style="width: 250px;">
+<img src="img/MX64I2.JPG" title="Ball bearing of the free wheel" style="width: 250px;">
+<img src="img/MX64I3.JPG" title="Free wheel mounted with no screw (yet)" style="width: 250px;"></p>
+<h2 id="inserting-the-nuts">Inserting the nuts</h2>
+<p>Some nuts will have to be inserted in the motors in order to receive the screws allowing the 3D printed parts to be fastened. The location needing nuts will be told in the videos for each motor.</p>
+<p>In order to place a single nut: Take a nut using thin tweezers and bring it in the sitewith the right orientation. Put the end of the tweezers in the hole to ensure good alignment. Then use flat pincers to adjust the nut. These nuts correspond to diameter 2.5mm screws, Allen wrench 2mm.</p>
+<p>Older motor version MX-28 have no thread at all, but newer version MX-28AT are partially threaded in a side. So less nuts will be needed with newest motors.</p>
+<p><img src="img/nuts1.JPG" title="Insert a nut" style="width: 250px;">
+<img src="img/nuts2.JPG" title="Insert a nut" style="width: 250px;">
+<img src="img/nuts3.JPG" title="Insert a nut" style="width: 250px;"></p>
+<p>Later on, when you tighen the screw, make attention not to push the nuts unintentionally. Once motors are inserted in some structural parts, som nut locations can no longer be reached by hands so you will not be along to insert the fallen nuts again. </p>
+<p><a href="addressing_dynamixel.html"><strong>Next &gt;&gt; 4. Configuring the Dynamixel motors</strong></a></p>
+<p><a href="./"><strong>&lt;&lt; Back to menu</strong></a></p>
+<p><div id="page-footer" class="localized-footer"><hr><h4 id="questions-">Questions ?</h4>
+<p>We&apos;re always happy to help with code or other questions you might have! You can ask questions and share solutions on our <a href="https://forum.poppy-project.org" target="_blank">community Forum</a>.</p>
+</div></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="bom.html" class="navigation navigation-prev " aria-label="Previous page: Bill Of Material (BOM)">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="addressing_dynamixel.html" class="navigation navigation-next " aria-label="Next page: Configuring the Dynamixel motors">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Dynamixel hardware","level":"3.2.3","depth":2,"next":{"title":"Configuring the Dynamixel motors","level":"3.2.4","depth":2,"path":"assembly-guides/poppy-humanoid/addressing_dynamixel.md","ref":"assembly-guides/poppy-humanoid/addressing_dynamixel.md","articles":[]},"previous":{"title":"Bill Of Material (BOM)","level":"3.2.2","depth":2,"path":"assembly-guides/poppy-humanoid/bom.md","ref":"assembly-guides/poppy-humanoid/bom.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-share","anchorjs","build","copy-code-button","custom-favicon","download-pdf-link","github","language-picker","localized-footer","page-toc","piwik","richquotes","search-plus","sitemap","toggle-chapters","toggle-headers","youtube"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"piwik":{"jsPath":"piwik.js","phpPath":"piwik.php","URL":"piwik.inria.fr/","siteId":66},"language-picker":{"grid-columns":3},"youtube":{},"github":{"url":"https://github.com/poppy-project/poppy-docs"},"page-toc":{"position":"before-first","selector":".markdown-section h2, .markdown-section h3","showByDefault":true},"localized-footer":{"filename":"FOOTER.md","hline":"true"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"toggle-headers":{},"build":{"args":[],"bin":"pandoc","format":"latex","opts":{},"output":"_book/main.tex","template":"_layouts/main.tex"},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{},"highlight":{},"favicon":"img/logo/favicon-128.ico","sitemap":{"hostname":"https://docs.poppy-project.org/"},"custom-favicon":{},"copy-code-button":{},"download-pdf-link":{"label":{"en":"Download PDF","fr":"Télécharger en PDF"},"base":"https://www.gitbook.com/download/pdf/book/poppy-project/poppy-docs","multilingual":true},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["twitter","facebook","google","weibo","instapaper"]},"edit-link":{"base":"https://github.com/poppy-project/poppy-docs/edit/master/","label":{"en":"Edit this page","fr":"Editez cette page"}},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchorjs":{},"toggle-chapters":{},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"poppy_doc_version":"1.0","poppy-humanoid_humanoid_hardware_version":"1.0","poppy-humanoid_humanoid_software_version":"1.0","poppy-torso_hardware_version":"1.0","poppy-torso_software_version":"1.0","poppy-ergo-jr_hardware_version":"1.0","poppy-ergo-jr_software_version":"1.0"},"title":"Documentation of the Poppy Platform","language":"en","gitbook":"*"},"file":{"path":"assembly-guides/poppy-humanoid/dynamixel_hardware.md","mtime":"2020-08-25T20:31:22.993Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-25T20:32:20.205Z"},"basePath":"../..","book":{"language":"en"}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-anchorjs/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-anchorjs/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-download-pdf-link/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-page-toc/anchor-3.1.1.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-page-toc/page-toc.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-piwik/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-toggle-headers/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+
+    <script type="text/javascript">
+        var _paq = _paq || [];
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+            var u=(('https:' == document.location.protocol) ? 'https' : 'http') + '://piwik.inria.fr/';
+            // Ensure URL ends with slash
+            if (u.slice(-1) !== '/') u+='/';
+            _paq.push(['setTrackerUrl', u+'piwik.php']);
+            _paq.push(['setSiteId', 66]);
+            var d=document,
+                g=d.createElement('script'),
+                s=d.getElementsByTagName('script')[0];
+            g.type='text/javascript';
+            g.defer=true;
+            g.async=true;
+            g.src=u+'piwik.js';
+            s.parentNode.insertBefore(g,s);
+        })();
+    </script>
+    <noscript>
+        <p><img src="http://piwik.inria.fr/piwik.php?idsite=66"
+                style="border:0;" alt="" /></p>
+    </noscript>
+
+    </body>
+</html>
+
