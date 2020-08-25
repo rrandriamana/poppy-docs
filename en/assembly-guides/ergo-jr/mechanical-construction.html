@@ -75,7 +75,7 @@
     <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../poppy-humanoid/" />
+    <link rel="next" href="../poppycustom/" />
     
     
     <link rel="prev" href="motor-configuration.html" />
@@ -411,12 +411,48 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2" data-path="../poppy-humanoid/">
+        <li class="chapter " data-level="3.2" data-path="../poppycustom/">
+            
+                <a href="../poppycustom/">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    Custom your Ergo Jr
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="../poppycustom/dragster-mini/">
+            
+                <a href="../poppycustom/dragster-mini/">
+            
+                    
+                        <b>3.2.1.</b>
+                    
+                    Assemble the Dragster Mini
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../poppy-humanoid/">
             
                 <a href="../poppy-humanoid/">
             
                     
-                        <b>3.2.</b>
+                        <b>3.3.</b>
                     
                     Assemble the Poppy Humanoid
             
@@ -426,12 +462,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.3" data-path="../poppy-torso/">
+        <li class="chapter " data-level="3.4" data-path="../poppy-torso/">
             
                 <a href="../poppy-torso/">
             
                     
-                        <b>3.3.</b>
+                        <b>3.4.</b>
                     
                     Assemble the Poppy Torso
             
@@ -805,39 +841,35 @@
                                 
                                 <h1 id="mechanical-assembly">Mechanical Assembly</h1>
 <h2 id="general-advices-and-warnings">General advices and warnings</h2>
-<!-- TODO:
-* picture rivet black vs grey
-* ergo + wires
--->
 <ul>
-<li>You can assemble all the rivets you need before the construction. You have to put the edges of the first part in the second part holes. You will thus be able to remove them easily if needed.</li>
+<li><p><strong>All orientations of all parts are very important</strong>. Observe the pictures very carefully in order to reproduce the exact same assembly with the parts in the same orientation. If you make a mistake, you will realize it because your robot will perform motions different from what you&apos;ll ask. In that case do not worry, you will be able to unmount an remount your robot.</p>
+</li>
+<li><p>You can pre-assembly all riverts you need before building your robot. Rivets are composed of 2 elements inserted into each other this way:</p>
+</li>
 </ul>
 <p><img src="img/assembly/ollo_rivet.png" alt="OLLO Rivet Assembly"></p>
 <ul>
-<li>There are two kinds of rivets. The grey ones and the others. Grey rivets are longer to be able to be inserted in the motor axis, at the opposite side of the horn.</li>
+<li>There are two kinds of rivets. The grey ones and the others. Grey rivets are longer to be able to be inserted in the motor axis, at the opposite side of the horn (black revolving circle).</li>
 </ul>
-<!-- HTML link to adapt image size -->
 <p><img src="img/assembly/ollo_rivets_size.jpg" alt="OLLO Rivet size" height="200"></p>
 <ul>
 <li>Use the OLLO Tool for putting and removing rivets easily.</li>
 </ul>
-<!-- HTML link to adapt image size -->
 <p><img src="img/assembly/ollo-tool.jpg" alt="OLLO Tool" height="200"></p>
 <ul>
-<li>Do not forget to put wires between motors while building the robot! Each motor, except the last, must have two wires; one connected to the previous motor and the other to the next (no favourite side).</li>
+<li>Do not forget to put wires between motors while building the robot! Each motor, except the last, must have two wires; one connected to the previous motor and the other to the next (there is no importance on the connector choice).</li>
 </ul>
 <ul>
 <li><strong>Always align the horn with the motor before assembling them!</strong> Otherwise your Poppy Ergo Jr will look all weird.</li>
 </ul>
-<!-- HTML link to adapt image size -->
-<p><img src="img/assembly/align-horn.png" alt="Align Horn" height="200"></p>
+<p><img src="img/assembly/align-horn.jpg" alt="Align Horn" height="200"></p>
 <ul>
 <li>Every motor horns (black revolving circle) are <strong>facing the left side of the robot</strong>. It is a convention but it will define the orientation of your motors.</li>
 </ul>
 <p><img src="img/assembly/horns_on_left.jpg" alt="Horns on left side"></p>
 <h2 id="step-by-step-guide">Step-By-Step guide</h2>
 <h3 id="motor-configuration-for-all-steps">Motor configuration (for all steps)</h3>
-<p>You can configure your motors before, during or after the the mechanical assembly but it is highly advised to configure each motor one by one in the construction order :</p>
+<p>You can configure your motors before, during or after the the mechanical assembly but <strong>it is highly advised to configure each motor one by one in the construction order</strong>:</p>
 <ul>
 <li>configure motor m1</li>
 <li>assemble the base and motor m1</li>
@@ -848,30 +880,30 @@
 <p> To configure motors, you have to connect them separately one by one to the Raspberry Pi. If you try to configure a new motor wired to a previously configured motor, this will not work.</p>
 </blockquote>
 <p>Please consult the <a href="motor-configuration.html">motor configuration section</a> for more informations.</p>
-<h3 id="step-1">Step 1</h3>
+<h3 id="step-1---motor-1">Step 1 - motor 1</h3>
 <p>First, <a href="motor-configuration.html">configure one XL-320</a> motor as &quot;m1&quot;.</p>
 <p>Mount the motor on the 3D printed base.</p>
 <p><img src="img/assembly/steps/step_1-2.jpg" alt="step 1"></p>
 <p>To do so, prepare 8 small rivets. put the first part in the second part without putting them in the motor. Then, place the motor in the base, with the horn facing up and near the more open side.
 Use the Ollo to grab a rivet between the first and the second part, then put the rivet in one the assembly holes. Once the rivet is in place, lock it by pushing the part 1 of the rivet in part 2.</p>
-<h3 id="step-2">Step 2</h3>
+<h3 id="step-2---motor-2">Step 2 - motor 2</h3>
 <p>Configure the second motor, its name is &quot;m2&quot;, with the following command in a poppy terminal:</p>
 <pre><code class="lang-bash">poppy-configure ergo-jr m2
 </code></pre>
 <p>Mount the <em>long_U</em> part. Be careful with the orientation of the U, the horn must be oriented in the left.
 Mount the motor &quot;m2&quot; on top of the construction.</p>
 <p><img src="img/assembly/steps/step_3-4.jpg" alt="step 2"></p>
-<h3 id="step-3">Step 3</h3>
+<h3 id="step-3---motor-3">Step 3 - motor 3</h3>
 <p>Configure a third motor: &quot;m3&quot;.</p>
 <p>Mount <em>horn2horn</em> and <em>horn2side</em> parts on motor &quot;m2&quot;, and mount &quot;m3&quot; on top of the construction.
 <img src="img/assembly/steps/step_5-6.jpg" alt="step 3"></p>
-<h3 id="step-4">Step 4</h3>
+<h3 id="step-4---motor-4">Step 4 - motor 4</h3>
 <p>Configure the fourth motor: &quot;m4&quot;.</p>
 <p>Mount the <em>short_U</em> on it.
 <img src="img/assembly/steps/step_7-8.jpg" alt="step 4"></p>
 <p>Mount motor &quot;m4&quot; and the assembled <em>short_U</em> on top of the previous assembly. The nose of the motor should be on the other side of the base.
 <img src="img/assembly/steps/step_9-10.jpg" alt="step 4 bis"></p>
-<h3 id="step-5">Step 5</h3>
+<h3 id="step-5---motor-5">Step 5 - motor 5</h3>
 <p>Configure the fifth motor: &quot;m5&quot;.</p>
 <p>Mount <em>horn2horn</em> and <em>horn2side</em> parts on motor &quot;m4&quot;, and mount &quot;m5&quot; on top of the construction.</p>
 <p><img src="img/assembly/steps/step_11-12-13.jpg" alt="step 5"></p>
@@ -886,23 +918,28 @@ Mount the motor &quot;m2&quot; on top of the construction.</p>
 <img src="img/assembly/steps/step_14-16-17.jpg" alt="step 6"></p>
 <p>You can mount the pen holder or the lampshade on the motor &quot;m6&quot;.
 <img src="img/assembly/steps/step_18-19.jpg" alt="step 6 bis"></p>
+<p>In the same way you mount the lampshade, you can also mount the pen holder.
+<img src="img/assembly/steps/pen_holder.jpg" alt="step 6 pen" height="300"></p>
 <h4 id="gripper">Gripper</h4>
 <p>Mount the <a href="https://github.com/poppy-project/poppy-ergo-jr/blob/master/hardware/STL/tools/gripper-fixation.stl" target="_blank"><em>gripper-fixation</em></a> between motors &quot;m5&quot; and &quot;m6&quot;.</p>
-<p>Mount <em>gripper-fixed_part</em> and <em>gripper-rotative_part</em> on motor &quot;m6&quot;.
-<!-- TODO closed picture of gripper--></p>
+<p>Mount <em>gripper-fixed_part</em> and <em>gripper-rotative_part</em> on motor &quot;m6&quot;.</p>
+<p>There is two way to mount the gripper, vertically
+<img src="img/assembly/steps/grip1.jpg" alt="step gripper"></p>
+<p>Or Horizontally
+<img src="img/assembly/steps/grip2.jpg" alt="step gripper"></p>
 <h3 id="step-7---electronics">Step 7 - electronics</h3>
 <p>Mount the support_camera part on the base. Fix the Raspberry Pi camera on it and move the camera flex cable between motor &quot;m1&quot; and the base.
 <img src="img/assembly/steps/step_21-22.jpg" alt="step 7"></p>
+<p><strong>Camera flex wire</strong></p>
 <p>To fix the flex cable of the camera on the Raspberry Pi:</p>
 <ul>
-<li>open the camera connector by pulling on the tab</li>
-<li>make sure that connectors on the flex cable are facing away of the ethernet port</li>
-<li>push the flex on the port, and push the plastic tab down</li>
+<li>open the camera connector by pulling on the tab to the top</li>
+<li>make sure that connectors on the flex cable are facing away of the Ethernet port</li>
+<li>push the flex on the port, and push the plastic tab down to close it
+<img src="img/assembly/steps/camera.jpg" alt="step 7"></li>
 </ul>
-<!-- TODO: add a closed picture of camera fix-->
 <p><strong>Motors wires:</strong></p>
 <p>If it is not already done, you can plug every motors wires. Every motor has two connectors but there is no input or output: you just have to create a chain of motors. The first motor is linked to the pixl and the second motor; the last motor is linked only to the previous one, and every other motors are linked to the one above and ahead.</p>
-<!-- TODO picture of OLLO + base rivets -->
 <blockquote class="clearfix alert alert-info"><strong class="fa fa-2x fa-info"></strong>
 <p> Connectors of the motor &quot;m1&quot; (in the base) are a bit hard to link, you can use the OLLO tool to help yourself.</p>
 </blockquote>
@@ -911,9 +948,22 @@ Mount the motor &quot;m2&quot; on top of the construction.</p>
 <p>Mount your Ergo Jr to the wood <em>disk-support</em>.</p>
 <p>Mount the Raspberry Pi to the disk support, and use 4 x M2.5x6mm screw to fix it.
 <!-- TODO: picture of disk fixation --></p>
+<h3 id="step-9---test-your-robot-">Step 9 - test your Robot !</h3>
+<p>Congratulation, you achieve the robot assembly! Now, it is almost done, it is time to test it!</p>
+<p>Go to your robot home page <a href="http://poppy.local" target="_blank">http://poppy.local</a>.</p>
+<p>Click on <em>Reboot the robot</em> button to be sure that the robot software was started with all motors wired in.
+<img src="img/IHM/home_page_reboot.png" alt="test installation" height="250"></p>
+<p>You can go to the monitor, click on <em>Monitor and Control</em> button.
+<img src="img/IHM/home_page_monitor.png" alt="test installation" height="250"></p>
+<p>If the robot software is correctly started, you should see the green connection logo, otherwise it will be red.
+<img src="img/IHM/monitor_full.png" alt="test installation"></p>
+<p>You can start a pre-defined behavior by clicking on the play logo.</p>
+<p><strong>If the connection logo is red</strong>, you can see what is wrong by looking on messages in <em>What append?</em> page.
+<img src="img/IHM/home_page_logs.png" alt="test installation" height="250"></p>
+<p>Most of the time, it&apos;s because a wire is unplugged or because you forgot to configure a motor.</p>
 <h3 id="done">Done</h3>
 <p><img src="img/assembly/ergo-tool-2.jpg" alt="image"></p>
-<p>Grab your <a href="https://www.flickr.com/photos/poppy-project/16488256337/" target="_blank">favourite drink</a> and relax.</p>
+<p>Grab your <a href="https://www.flickr.com/photos/poppy-project/16488256337/" target="_blank">favorite drink</a> and relax.</p>
 <p><div id="page-footer" class="localized-footer"><hr><h4 id="questions-">Questions ?</h4>
 <p>We&apos;re always happy to help with code or other questions you might have! You can ask questions and share solutions on our <a href="https://forum.poppy-project.org" target="_blank">community Forum</a>.</p>
 </div></p>
@@ -949,7 +999,7 @@ Mount the motor &quot;m2&quot; on top of the construction.</p>
                 </a>
                 
                 
-                <a href="../poppy-humanoid/" class="navigation navigation-next " aria-label="Next page: Assemble the Poppy Humanoid">
+                <a href="../poppycustom/" class="navigation navigation-next " aria-label="Next page: Custom your Ergo Jr">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -960,7 +1010,7 @@ Mount the motor &quot;m2&quot; on top of the construction.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Hardware construction","level":"3.1.3","depth":2,"next":{"title":"Assemble the Poppy Humanoid","level":"3.2","depth":1,"path":"assembly-guides/poppy-humanoid/README.md","ref":"assembly-guides/poppy-humanoid/README.md","articles":[]},"previous":{"title":"Motor configuration","level":"3.1.2","depth":2,"path":"assembly-guides/ergo-jr/motor-configuration.md","ref":"assembly-guides/ergo-jr/motor-configuration.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-share","anchorjs","build","copy-code-button","custom-favicon","download-pdf-link","github","language-picker","localized-footer","page-toc","piwik","richquotes","search-plus","sitemap","toggle-chapters","toggle-headers","youtube"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"piwik":{"jsPath":"piwik.js","phpPath":"piwik.php","URL":"piwik.inria.fr/","siteId":66},"language-picker":{"grid-columns":3},"youtube":{},"github":{"url":"https://github.com/poppy-project/poppy-docs"},"page-toc":{"position":"before-first","selector":".markdown-section h2, .markdown-section h3"},"localized-footer":{"filename":"FOOTER.md","hline":"true"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"toggle-headers":{},"build":{"args":[],"bin":"pandoc","format":"latex","opts":{},"output":"_book/main.tex","template":"_layouts/main.tex"},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{},"highlight":{},"favicon":"img/logo/favicon-128.ico","sitemap":{"hostname":"https://docs.poppy-project.org/"},"custom-favicon":{},"copy-code-button":{},"download-pdf-link":{"label":{"en":"Download PDF","fr":"Télécharger en PDF"},"base":"https://www.gitbook.com/download/pdf/book/poppy-project/poppy-docs","multilingual":true},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["twitter","facebook","google","weibo","instapaper"]},"edit-link":{"base":"https://github.com/poppy-project/poppy-docs/edit/master/","label":{"en":"Edit this page","fr":"Editez cette page"}},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchorjs":{},"toggle-chapters":{},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"poppy_doc_version":"1.0","poppy-humanoid_humanoid_hardware_version":"1.0","poppy-humanoid_humanoid_software_version":"1.0","poppy-torso_hardware_version":"1.0","poppy-torso_software_version":"1.0","poppy-ergo-jr_hardware_version":"1.0","poppy-ergo-jr_software_version":"1.0"},"title":"Documentation of the Poppy Platform","language":"en","gitbook":"*"},"file":{"path":"assembly-guides/ergo-jr/mechanical-construction.md","mtime":"2017-10-23T15:46:48.217Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-10-23T15:51:01.667Z"},"basePath":"../..","book":{"language":"en"}});
+            gitbook.page.hasChanged({"page":{"title":"Hardware construction","level":"3.1.3","depth":2,"next":{"title":"Custom your Ergo Jr","level":"3.2","depth":1,"path":"assembly-guides/poppycustom/README.md","ref":"assembly-guides/poppycustom/README.md","articles":[{"title":"Assemble the Dragster Mini","level":"3.2.1","depth":2,"path":"assembly-guides/poppycustom/dragster-mini/README.md","ref":"assembly-guides/poppycustom/dragster-mini/README.md","articles":[]}]},"previous":{"title":"Motor configuration","level":"3.1.2","depth":2,"path":"assembly-guides/ergo-jr/motor-configuration.md","ref":"assembly-guides/ergo-jr/motor-configuration.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-share","anchorjs","build","copy-code-button","custom-favicon","download-pdf-link","github","language-picker","localized-footer","page-toc","piwik","richquotes","search-plus","sitemap","toggle-chapters","toggle-headers","youtube"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"piwik":{"jsPath":"piwik.js","phpPath":"piwik.php","URL":"piwik.inria.fr/","siteId":66},"language-picker":{"grid-columns":3},"youtube":{},"github":{"url":"https://github.com/poppy-project/poppy-docs"},"page-toc":{"position":"before-first","selector":".markdown-section h2, .markdown-section h3","showByDefault":true},"localized-footer":{"filename":"FOOTER.md","hline":"true"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"toggle-headers":{},"build":{"args":[],"bin":"pandoc","format":"latex","opts":{},"output":"_book/main.tex","template":"_layouts/main.tex"},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{},"highlight":{},"favicon":"img/logo/favicon-128.ico","sitemap":{"hostname":"https://docs.poppy-project.org/"},"custom-favicon":{},"copy-code-button":{},"download-pdf-link":{"label":{"en":"Download PDF","fr":"Télécharger en PDF"},"base":"https://www.gitbook.com/download/pdf/book/poppy-project/poppy-docs","multilingual":true},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["twitter","facebook","google","weibo","instapaper"]},"edit-link":{"base":"https://github.com/poppy-project/poppy-docs/edit/master/","label":{"en":"Edit this page","fr":"Editez cette page"}},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchorjs":{},"toggle-chapters":{},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"poppy_doc_version":"1.0","poppy-humanoid_humanoid_hardware_version":"1.0","poppy-humanoid_humanoid_software_version":"1.0","poppy-torso_hardware_version":"1.0","poppy-torso_software_version":"1.0","poppy-ergo-jr_hardware_version":"1.0","poppy-ergo-jr_software_version":"1.0"},"title":"Documentation of the Poppy Platform","language":"en","gitbook":"*"},"file":{"path":"assembly-guides/ergo-jr/mechanical-construction.md","mtime":"2020-08-25T16:43:49.100Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-25T16:44:47.238Z"},"basePath":"../..","book":{"language":"en"}});
         });
     </script>
 </div>
@@ -971,7 +1021,7 @@ Mount the motor &quot;m2&quot; on top of the construction.</p>
     <script src="../../../gitbook/theme.js"></script>
     
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.1.1/anchor.min.js"></script>
+        <script src="../../../gitbook/gitbook-plugin-anchorjs/anchor.min.js"></script>
         
     
         

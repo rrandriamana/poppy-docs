@@ -139,6 +139,81 @@
             
         </li>
     
+        <li class="chapter " data-level="1.3" data-path="../getting-started/build.html">
+            
+                <a href="../getting-started/build.html">
+            
+                    
+                        <b>1.3.</b>
+                    
+                    Construire un robot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../getting-started/connect.html">
+            
+                <a href="../getting-started/connect.html">
+            
+                    
+                        <b>1.4.</b>
+                    
+                    Se connecter au robot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../getting-started/program-the-robot.html">
+            
+                <a href="../getting-started/program-the-robot.html">
+            
+                    
+                        <b>1.5.</b>
+                    
+                    Programmer un robot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../getting-started/visualize.html">
+            
+                <a href="../getting-started/visualize.html">
+            
+                    
+                        <b>1.6.</b>
+                    
+                    Visualiser
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../getting-started/example-of-projects.html">
+            
+                <a href="../getting-started/example-of-projects.html">
+            
+                    
+                        <b>1.7.</b>
+                    
+                    Exemples de projets
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -330,12 +405,48 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2" data-path="../assembly-guides/poppy-humanoid/">
+        <li class="chapter " data-level="3.2" data-path="../assembly-guides/poppycustom/">
+            
+                <a href="../assembly-guides/poppycustom/">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    Custom your Ergo Jr
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="../assembly-guides/poppycustom/dragster-mini/">
+            
+                <a href="../assembly-guides/poppycustom/dragster-mini/">
+            
+                    
+                        <b>3.2.1.</b>
+                    
+                    Assemble the Dragster Mini
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../assembly-guides/poppy-humanoid/">
             
                 <a href="../assembly-guides/poppy-humanoid/">
             
                     
-                        <b>3.2.</b>
+                        <b>3.3.</b>
                     
                     Assembler Poppy Humanoid
             
@@ -345,12 +456,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.3" data-path="../assembly-guides/poppy-torso/">
+        <li class="chapter " data-level="3.4" data-path="../assembly-guides/poppy-torso/">
             
                 <a href="../assembly-guides/poppy-torso/">
             
                     
-                        <b>3.3.</b>
+                        <b>3.4.</b>
                     
                     Assembler Poppy Torso
             
@@ -723,9 +834,9 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="zeroconf--bonjour">Zeroconf / Bonjour</h1>
-<p><a href="https://en.wikipedia.org/wiki/Zero-configuration_networking" target="_blank">Zeroconf</a> &#xE9;galement appel&#xE9; Bonjour (nom donn&#xE9; par Apple) est un ensemble de technologies qui facilite la communication entre les ordinateurs sans configuration pr&#xE9;alable.</p>
+<p><a href="https://en.wikipedia.org/wiki/Zero-configuration_networking" target="_blank">Zeroconf</a> also called Bonjour (name of Apple implementation) is set of technologies that allow more easily communication between computers without configuration. To be short: - It makes able to reach the robot on your local network <strong>without</strong> having to know its IP address - It makes able to connect the robot to your computer directly with an Ethernet wire <strong>without using a router</strong>, and without a DHCP server.</p>
 <blockquote class="clearfix alert alert-info"><strong class="fa fa-2x fa-info"></strong>
-<p> Zeroconf n&apos;est pas obligatoire sur votre ordinateur pour faire fonctionner les robots Poppy, mais nous allons supposer qu&apos;il est install&#xE9;. C&apos;est plus commode et plus lisible pour la documentation.</p>
+<p> Zeroconf is not mandatory on your computer to use Poppy robots, it is strongly recommended, and the documentation will assume it is installed. Otherwise replace all <em>poppy.local</em> occurrences by the IP address of the robot given by your router.</p>
 </blockquote>
 <h2 id="installation">Installation</h2>
 <h3 id="windows">Windows</h3>
@@ -742,27 +853,28 @@
 <p>Sous Fedora / CentOS, ex&#xE9;cutez</p>
 <pre><code class="lang-bash">sudo yum install avahi-daemon avahi-autoipd
 </code></pre>
+<p>To connect to your robot directly with an Ethernet wire, you need to select <strong>local link only</strong> on the IPv4 configuration of your Network manager.</p>
 <h3 id="sous-mac-osx">Sous MAC OSX</h3>
-<p>Bonjour est d&#xE9;j&#xE0; install&#xE9; avec OSX. De plus, si vous pr&#xE9;voyez de connecter votre ordinateur directement au robot (sans routeur), utilisez un adaptateur Thunderbolt vers Ethernet plut&#xF4;t qu&apos;un adaptateur USB vers Ethernet</p>
-<p>Vous &#xEA;tes pr&#xEA;t &#xE0; continuer votre <a href="./">parcours d&#x2019;installation</a>.</p>
+<p>Bonjour is already installed with OSX. Moreover, if you plan to connect your computer directly to the robot (without a router), use a Thunderbolt to Ethernet adapter rather than a USB to Ethernet</p>
+<p>You ready to follow your <a href="./">installation path</a>.</p>
 <h2 id="ce-que-zeroconf-fait-pour-vous">Ce que Zeroconf fait pour vous</h2>
 <h3 id="nom-de-domaine-local-mdns">Nom de domaine local (mDNS)</h3>
-<p>Le client Zeroconf <em>publie</em> un nom de domaine local d&#xE9;centralis&#xE9; (mDNS) avec l&apos;extension de domaine &apos;. local&apos;. Cela signifie que vous pouvez joindre n&apos;importe quel ordinateur local par son nom d&apos;h&#xF4;te suivit du suffixe &apos;. local&apos; au lieu de son adresse IP.</p>
-<p>Avec un client Zeroconf, pour <code>ping</code> un ordinateur appel&#xE9; (hostname) &apos;ergojr&apos;, vous pouvez simplement faire:</p>
+<p>Zeroconf client <em>publishes</em> a decentralized local domain name (mDNS) with the &apos;.local&apos; top level domain. It means that you can join any local local computer by its hostname with the &apos;.local&apos; suffix instead of its IP address.</p>
+<p>With a zeroconf client, to <code>ping</code> a computer called (hostname) &apos;ergojr&apos;, you can simply do:</p>
 <pre><code>$ ping ergojr.local 
 64 bytes from 192.168.1.42: icmp_seq=0 ttl=54 time=3.14 ms 
 [...]
-</code></pre><p>Vous n&apos;avez plus besoin de rechercher une adresse IP sur votre r&#xE9;seau local; vous n&apos;avez m&#xEA;me pas besoin de comprendre ce qu&apos;est une adresse IP.</p>
-<p>Cela fonctionne &#xE9;galement sur votre navigateur web. Pour ouvrir le site h&#xE9;berg&#xE9; sur l&apos;ordinateur du robot appel&#xE9; &apos;ergojr&apos;, vous devez ouvrir : <a href="http://ergojr.local" target="_blank">http://ergojr.local</a> dans le champ URL de navigateur web pr&#xE9;f&#xE9;r&#xE9;.</p>
+</code></pre><p>You no longer need to look for its IP address on your local network; you don&apos;t even need to understand what an IP address is.</p>
+<p>It also work on your web browser. To open the website hosted on the robot computer called &apos;ergojr&apos;, you have to open: <a href="http://ergojr.local" target="_blank">http://ergojr.local</a> on your favorite web browser URL field.</p>
 <h3 id="link-local-ipv4-addresses-ipv4ll">Link-local IPv4 addresses (IPv4LL)</h3>
-<p>Parmi les autres outils de Zeroconf, il existe une impl&#xE9;mentation de DHCP d&#xE9;centralis&#xE9; (<a href="https://en.wikipedia.org/wiki/Zero-configuration_networking#Link-local_IPv4_addresses" target="_blank">IPv4LL</a>), qui permettent aux ordinateurs d&apos;obtenir une adresse IP et de se connecter les uns aux autres <strong>sans</strong> aucun serveur DHCP.</p>
-<p>La gamme <a href="https://en.wikipedia.org/wiki/Link-local_address#IPv4" target="_blank">APIPA</a> d&apos;adresse IP automatique se trouve comprise entre 169.254.0.0 et 169.254.255.255.</p>
-<p>Vous pouvez brancher un robot &#xE0; votre ordinateur <strong>directement</strong> sur votre ordinateur avec un c&#xE2;ble Ethernet, <strong>sans</strong> aucun routeur et le connecter avec son nom de domaine local (hostname.local).</p>
+<p>Among other Zeroconf tools, there is an implementation of decentralized DHCP (<a href="https://en.wikipedia.org/wiki/Zero-configuration_networking#Link-local_IPv4_addresses" target="_blank">IPv4LL</a>), which allow computers obtain an IP and connect each others <strong>without</strong> a DHCP server.</p>
+<p>The auto-adressed IP is in the <a href="https://en.wikipedia.org/wiki/Link-local_address#IPv4" target="_blank">APIPA</a> range, from 169.254.0.0 to 169.254.255.255.</p>
+<p>You can plug a robot to your computer <strong>directly</strong> on your computer with an Ethernet cable, <strong>without</strong> any router and connect it with its local domain name (hostname.local).</p>
 <blockquote class="clearfix alert alert-quote"><strong class="fa fa-2x fa-quote-left"></strong>
 <p> Vous serez en mesure d&apos;utiliser l&apos;adresse IPv4 de liaison locale <strong>seulement</strong> si vous avez install&#xE9; vos robots apr&#xE8;s la fin du mois de mai 2016. Pr&#xE9;c&#xE9;demment le paquet <em>avahi-autoipd</em> &#xE9;tait manquant.</p>
 </blockquote>
 <h2 id="alternatives-pour-trouver-ladresse-ip-dun-ordinateur-sur-votre-r&#xE9;seau-local">Alternatives pour trouver l&apos;adresse IP d&apos;un ordinateur sur votre r&#xE9;seau local</h2>
-<p>Si vous ne pouvez pas (ou ne voulez pas) installer le client Zeroconf sur votre ordinateur, vous pouvez utiliser l&apos;une des m&#xE9;thodes suivantes pour trouver l&apos;adresse IP de votre robot.</p>
+<p>If you cannot (or doesn&apos;t want to) install a zeroconf client on your personal computer, you can use one of the following methods to find the IP address of your robot.</p>
 <ul>
 <li>Vous pouvez utiliser <a href="https://www.fingbox.com/download" target="_blank">Fing</a>, c&#xE9;l&#xE8;bre pour ses applications <a href="https://play.google.com/store/apps/details?id=com.overlook.android.fing" target="_blank">Android</a> et <a href="https://itunes.apple.com/fr/app/fing-network-scanner/id430921107?mt=8" target="_blank">iOS</a>,</li>
 <li><p><a href="https://nmap.org/book/man-host-discovery.html" target="_blank">Nmap</a> or arp(only GNU/Linux and MAC OSX) if you are not afraid of command line interfaces. </p>
@@ -819,7 +931,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Installez Bonjour/Zeroconf","level":"2.1.1","depth":2,"next":{"title":"Télécharger et graver l'image système","level":"2.1.2","depth":2,"path":"installation/burn-an-image-file.md","ref":"installation/burn-an-image-file.md","articles":[]},"previous":{"title":"Installation","level":"2.1","depth":1,"path":"installation/README.md","ref":"installation/README.md","articles":[{"title":"Installez Bonjour/Zeroconf","level":"2.1.1","depth":2,"path":"installation/install-zeroconf.md","ref":"installation/install-zeroconf.md","articles":[]},{"title":"Télécharger et graver l'image système","level":"2.1.2","depth":2,"path":"installation/burn-an-image-file.md","ref":"installation/burn-an-image-file.md","articles":[]},{"title":"Installer les logiciels Poppy","level":"2.1.3","depth":2,"path":"installation/install-poppy-softwares.md","ref":"installation/install-poppy-softwares.md","articles":[]},{"title":"Installation du simulateur V-REP","level":"2.1.4","depth":2,"path":"installation/install-vrep.md","ref":"installation/install-vrep.md","articles":[]},{"title":"Installer les pilotes USB vers port série","level":"2.1.5","depth":2,"path":"installation/install-drivers.md","ref":"installation/install-drivers.md","articles":[]},{"title":"Installer un ordinateur embarqué pour un robot Poppy","level":"2.1.6","depth":2,"path":"installation/install-a-poppy-board.md","ref":"installation/install-a-poppy-board.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-search","-share","anchorjs","build","copy-code-button","custom-favicon","download-pdf-link","github","language-picker","localized-footer","page-toc","piwik","richquotes","search-plus","sitemap","toggle-chapters","toggle-headers","youtube"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"piwik":{"jsPath":"piwik.js","phpPath":"piwik.php","URL":"piwik.inria.fr/","siteId":66},"language-picker":{"grid-columns":3},"youtube":{},"github":{"url":"https://github.com/poppy-project/poppy-docs"},"page-toc":{"position":"before-first","selector":".markdown-section h2, .markdown-section h3"},"localized-footer":{"filename":"FOOTER.md","hline":"true"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"toggle-headers":{},"build":{"args":[],"bin":"pandoc","format":"latex","opts":{},"output":"_book/main.tex","template":"_layouts/main.tex"},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{},"highlight":{},"favicon":"img/logo/favicon-128.ico","sitemap":{"hostname":"https://docs.poppy-project.org/"},"custom-favicon":{},"copy-code-button":{},"download-pdf-link":{"label":{"en":"Download PDF","fr":"Télécharger en PDF"},"base":"https://www.gitbook.com/download/pdf/book/poppy-project/poppy-docs","multilingual":true},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["twitter","facebook","google","weibo","instapaper"]},"edit-link":{"base":"https://github.com/poppy-project/poppy-docs/edit/master/","label":{"en":"Edit this page","fr":"Editez cette page"}},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchorjs":{},"toggle-chapters":{},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"poppy_doc_version":"1.0","poppy-humanoid_humanoid_hardware_version":"1.0","poppy-humanoid_humanoid_software_version":"1.0","poppy-torso_hardware_version":"1.0","poppy-torso_software_version":"1.0","poppy-ergo-jr_hardware_version":"1.0","poppy-ergo-jr_software_version":"1.0"},"title":"Documentation of the Poppy Platform","language":"fr","gitbook":"*"},"file":{"path":"installation/install-zeroconf.md","mtime":"2017-10-23T15:46:48.369Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-10-23T15:51:01.667Z"},"basePath":"..","book":{"language":"fr"}});
+            gitbook.page.hasChanged({"page":{"title":"Installez Bonjour/Zeroconf","level":"2.1.1","depth":2,"next":{"title":"Télécharger et graver l'image système","level":"2.1.2","depth":2,"path":"installation/burn-an-image-file.md","ref":"installation/burn-an-image-file.md","articles":[]},"previous":{"title":"Installation","level":"2.1","depth":1,"path":"installation/README.md","ref":"installation/README.md","articles":[{"title":"Installez Bonjour/Zeroconf","level":"2.1.1","depth":2,"path":"installation/install-zeroconf.md","ref":"installation/install-zeroconf.md","articles":[]},{"title":"Télécharger et graver l'image système","level":"2.1.2","depth":2,"path":"installation/burn-an-image-file.md","ref":"installation/burn-an-image-file.md","articles":[]},{"title":"Installer les logiciels Poppy","level":"2.1.3","depth":2,"path":"installation/install-poppy-softwares.md","ref":"installation/install-poppy-softwares.md","articles":[]},{"title":"Installation du simulateur V-REP","level":"2.1.4","depth":2,"path":"installation/install-vrep.md","ref":"installation/install-vrep.md","articles":[]},{"title":"Installer les pilotes USB vers port série","level":"2.1.5","depth":2,"path":"installation/install-drivers.md","ref":"installation/install-drivers.md","articles":[]},{"title":"Installer un ordinateur embarqué pour un robot Poppy","level":"2.1.6","depth":2,"path":"installation/install-a-poppy-board.md","ref":"installation/install-a-poppy-board.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-search","-share","anchorjs","build","copy-code-button","custom-favicon","download-pdf-link","github","language-picker","localized-footer","page-toc","piwik","richquotes","search-plus","sitemap","toggle-chapters","toggle-headers","youtube"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"piwik":{"jsPath":"piwik.js","phpPath":"piwik.php","URL":"piwik.inria.fr/","siteId":66},"language-picker":{"grid-columns":3},"youtube":{},"github":{"url":"https://github.com/poppy-project/poppy-docs"},"page-toc":{"position":"before-first","selector":".markdown-section h2, .markdown-section h3","showByDefault":true},"localized-footer":{"filename":"FOOTER.md","hline":"true"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"toggle-headers":{},"build":{"args":[],"bin":"pandoc","format":"latex","opts":{},"output":"_book/main.tex","template":"_layouts/main.tex"},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{},"highlight":{},"favicon":"img/logo/favicon-128.ico","sitemap":{"hostname":"https://docs.poppy-project.org/"},"custom-favicon":{},"copy-code-button":{},"download-pdf-link":{"label":{"en":"Download PDF","fr":"Télécharger en PDF"},"base":"https://www.gitbook.com/download/pdf/book/poppy-project/poppy-docs","multilingual":true},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["twitter","facebook","google","weibo","instapaper"]},"edit-link":{"base":"https://github.com/poppy-project/poppy-docs/edit/master/","label":{"en":"Edit this page","fr":"Editez cette page"}},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchorjs":{},"toggle-chapters":{},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"poppy_doc_version":"1.0","poppy-humanoid_humanoid_hardware_version":"1.0","poppy-humanoid_humanoid_software_version":"1.0","poppy-torso_hardware_version":"1.0","poppy-torso_software_version":"1.0","poppy-ergo-jr_hardware_version":"1.0","poppy-ergo-jr_software_version":"1.0"},"title":"Documentation of the Poppy Platform","language":"fr","gitbook":"*"},"file":{"path":"installation/install-zeroconf.md","mtime":"2020-08-25T16:43:49.288Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-25T16:44:47.238Z"},"basePath":"..","book":{"language":"fr"}});
         });
     </script>
 </div>
@@ -830,7 +942,7 @@
     <script src="../../gitbook/theme.js"></script>
     
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.1.1/anchor.min.js"></script>
+        <script src="../../gitbook/gitbook-plugin-anchorjs/anchor.min.js"></script>
         
     
         

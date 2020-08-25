@@ -139,6 +139,81 @@
             
         </li>
     
+        <li class="chapter " data-level="1.3" data-path="../getting-started/build.html">
+            
+                <a href="../getting-started/build.html">
+            
+                    
+                        <b>1.3.</b>
+                    
+                    Construire un robot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../getting-started/connect.html">
+            
+                <a href="../getting-started/connect.html">
+            
+                    
+                        <b>1.4.</b>
+                    
+                    Se connecter au robot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../getting-started/program-the-robot.html">
+            
+                <a href="../getting-started/program-the-robot.html">
+            
+                    
+                        <b>1.5.</b>
+                    
+                    Programmer un robot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../getting-started/visualize.html">
+            
+                <a href="../getting-started/visualize.html">
+            
+                    
+                        <b>1.6.</b>
+                    
+                    Visualiser
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../getting-started/example-of-projects.html">
+            
+                <a href="../getting-started/example-of-projects.html">
+            
+                    
+                        <b>1.7.</b>
+                    
+                    Exemples de projets
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -330,12 +405,48 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2" data-path="../assembly-guides/poppy-humanoid/">
+        <li class="chapter " data-level="3.2" data-path="../assembly-guides/poppycustom/">
+            
+                <a href="../assembly-guides/poppycustom/">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    Custom your Ergo Jr
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="../assembly-guides/poppycustom/dragster-mini/">
+            
+                <a href="../assembly-guides/poppycustom/dragster-mini/">
+            
+                    
+                        <b>3.2.1.</b>
+                    
+                    Assemble the Dragster Mini
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../assembly-guides/poppy-humanoid/">
             
                 <a href="../assembly-guides/poppy-humanoid/">
             
                     
-                        <b>3.2.</b>
+                        <b>3.3.</b>
                     
                     Assembler Poppy Humanoid
             
@@ -345,12 +456,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.3" data-path="../assembly-guides/poppy-torso/">
+        <li class="chapter " data-level="3.4" data-path="../assembly-guides/poppy-torso/">
             
                 <a href="../assembly-guides/poppy-torso/">
             
                     
-                        <b>3.3.</b>
+                        <b>3.4.</b>
                     
                     Assembler Poppy Torso
             
@@ -727,12 +838,11 @@
 <p>Nous allons d&#xE9;tailler tout ce que vous devez savoir pour pouvoir programmer directement le robot en utilisant le Python embarqu&#xE9; dans le robot Poppy ou pour l&apos;installer localement. Remarquez que ce chapitre ne pr&#xE9;tend pas vous apprendre le langage Python ou la programmation &#xE0; partir de z&#xE9;ro et donc si vous &#xEA;tes totalement nouveau sur le langage Python, il peut &#xEA;tre bon de commencer avec un tutoriel de Python. Pourtant, nous essayons de garder les tutoriels aussi simples que possible et nous vous avertirons toujours lorsque certaines parties ciblent les utilisateurs les plus avanc&#xE9;s.</p>
 <p>Nous allons essayer de fournir autant d&apos;exemples que possible et de l&apos;axer sur l&#x2019;API compl&#xE8;te ainsi vous pouvez trouver et utiliser les fonctionnalit&#xE9;s moins courantes. La plupart des exemples et didacticiels sont disponibles comme une liste de <a href="http://jupyter.org" target="_blank">notebooks Jupyter</a>. Le prochain chapitre, <a href="notebooks.html">Galerie de notebooks Jupyter</a>, pr&#xE9;sente une liste descriptive de chaque notebook, de ce qu&apos;ils contiennent, comment ils peuvent &#xEA;tre utilis&#xE9;s, pour quel robot, etc.</p>
 <p>Toutes les biblioth&#xE8;ques Poppy sont open source et sont distribu&#xE9;s sous la licence <a href="http://www.gnu.org/licenses/gpl.html" target="_blank">GPL v3</a>. Ainsi, vous pouvez acc&#xE9;der librement le code source sur <a href="https://github.com/poppy-project" target="_blank">GitHub</a>. N&#x2019;h&#xE9;sitez pas &#xE0; cr&#xE9;er un fork, envoyer un pull/request et &#xE0; contribuer !</p>
-<h2 id="pourquoi-python-et-anaconda-">Pourquoi Python et Anaconda ?</h2>
+<h2 id="pourquoi-python">Pourquoi Python?</h2>
 <p><img src="../img/python/powered.png" alt="Python powered" height="150"></p>
 <p>Les biblioth&#xE8;ques d&#xE9;velopp&#xE9;es pour le projet Poppy ont &#xE9;t&#xE9; con&#xE7;us dans le but de rendre facile et rapide l&#x2019;&#xE9;criture du code de contr&#xF4;le des diff&#xE9;rents robots bas&#xE9;s sur - &#xE0; l&apos;origine - les servomoteurs dynamixel robotis. L&#x2019;id&#xE9;e &#xE9;tait de fournir un acc&#xE8;s depuis le bas niveau -communication s&#xE9;rie brute avec un moteur sp&#xE9;cifique par exemple- &#xE0; des niveaux plus &#xE9;lev&#xE9;s tels que le d&#xE9;marrage et l&#x2019;arr&#xEA;t de primitives/comportements (p. ex. suivi de visage, postures,...) ou l&apos;enregistrement directement des mouvements gr&#xE2;ce &#xE0; de l&#x2019;apprentissage par d&#xE9;monstration.</p>
 <p>Nous avons d&#xE9;cid&#xE9; d&#x2019;&#xE9;crire la plupart d&apos;entre eux en Python, car sa souplesse permet un d&#xE9;veloppement rapide et modulaire. Elles &#xE9;taient &#xE9;galement destin&#xE9; &#xE0; &#xEA;tre accessible par un large public, de d&#xE9;veloppeurs, de roboticiens en g&#xE9;n&#xE9;ral, pour des amateurs, des chercheurs, des artistes... Python a &#xE9;galement &#xE9;t&#xE9; choisi pour l&apos;&#xE9;norme choix de biblioth&#xE8;ques existantes (scientifique, vision par ordinateur, web...), donc si quelqu&apos;un souhaite ajouter un nouvel &#xE9;l&#xE9;ment, comme le support &#xE0; un nouveau moteur/capteur, cela devrait &#xEA;tre r&#xE9;alisable le plus facilement et rapidement possible.</p>
 <p>Enfin, le support multiplateforme et la facilit&#xE9; d&#x2019;installation &#xE9;taient &#xE9;galement des aspects essentiels.</p>
-<p>Nous conseillons fortement d&#x2019;utiliser la <a href="https://www.continuum.io/why-anaconda" target="_blank">distribution Python Anaconda</a> puisqu&#x2019;elle comprend d&#xE9;j&#xE0; la plupart des biblioth&#xE8;ques n&#xE9;cessaire aux biblioth&#xE8;ques Poppy. Nous fournissons &#xE9;galement toutes les biblioth&#xE8;ques Poppy comme conda recipes afin d&apos;&#xEA;tre facilement installable &#xE0; l&#x2019;aide de Anaconda (voir <a href="../installation/install-poppy-softwares.html">section d&#x2019;installation</a>).</p>
 <h2 id="vue-densemble-des-diff&#xE9;rentes-biblioth&#xE8;ques">Vue d&#x2019;ensemble des diff&#xE9;rentes biblioth&#xE8;ques</h2>
 <blockquote class="clearfix alert alert-info"><strong class="fa fa-2x fa-info"></strong>
 <p> Une documentation plus d&#xE9;taill&#xE9;e de ces biblioth&#xE8;ques logicielles est disponible dans la <a href="../software-libraries/">section biblioth&#xE8;ques logicielles</a></p>
@@ -740,9 +850,7 @@
 <p>Avant de se lancer dans la programmation, nous allons pr&#xE9;senter bri&#xE8;vement les diff&#xE9;rentes biblioth&#xE8;ques Poppy existantes et comment elles interagissent entre elles.</p>
 <p>Il y a trois principales biblioth&#xE8;ques logicielles :</p>
 <ul>
-<li><p><a href="https://github.com/poppy-project/pypot" target="_blank">pypot :</a> C&#x2019;est le c&#x153;ur de l&#x2019;architecture logicielle Poppy. Pypot g&#xE8;re toutes les communications de bas niveau avec le mat&#xE9;riel (capteurs et moteurs), d&#xE9;finit les boucles de synchronisation afin que votre commande soient toujours &#xE0; jour. Il fournit &#xE9;galement les primitives du m&#xE9;canisme qui permet la d&#xE9;finition d&#x2019;un comportement simple qui peut &#xEA;tre -plus ou moins- automatiquement combin&#xE9;s.</p>
-</li>
-<li><p><a href="https://github.com/poppy-project/poppy-creature" target="_blank">poppy-creature :</a> Cette biblioth&#xE8;que d&#xE9;finit les outils communs partag&#xE9;s par tous les robots Poppy, par exemple comment faire pour lancer le simulateur ou d&#xE9;marrer l&#x2019;API HTTP automatiquement attach&#xE9; &#xE0; n&#x2019;importe quel robot.</p>
+<li><p><a href="https://github.com/poppy-project/pypot" target="_blank">pypot</a> : C&#x2019;est le c&#x153;ur de l&#x2019;architecture logicielle Poppy. Pypot g&#xE8;re toutes les communications de bas niveau avec le mat&#xE9;riel (capteurs et moteurs), d&#xE9;finit les boucles de synchronisation afin que votre commande soient toujours &#xE0; jour. Il fournit &#xE9;galement les primitives du m&#xE9;canisme qui permet la d&#xE9;finition d&#x2019;un comportement simple qui peut &#xEA;tre -plus ou moins- automatiquement combin&#xE9;s.</p>
 </li>
 <li><p><a href="https://github.com/poppy-project/poppy-ergo-jr" target="_blank">poppy-ergo-jr</a>, <a href="https://github.com/poppy-project/poppy-torso" target="_blank">poppy-torso</a>, and <a href="https://github.com/poppy-project/poppy-humanoid" target="_blank">poppy-humanoid:</a> ces biblioth&#xE8;ques sont sp&#xE9;cifiques &#xE0; chaque robot Poppy. Elles d&#xE9;finissent la configuration particuli&#xE8;re du robot, les capteurs utilis&#xE9;s, quels moteurs sont connect&#xE9;s &#xE0; quel bus... C&#x2019;est aussi ici que des comportements sp&#xE9;cifiques &#xE0; une cr&#xE9;ature sont d&#xE9;finis (la primitive qui fait Poppy Humanoid se tenir debout par exemple).</p>
 </li>
@@ -750,7 +858,7 @@
 <p>Cela est r&#xE9;sum&#xE9; dans le sch&#xE9;ma ci-dessous :</p>
 <p><img src="../img/python/architecture.png" alt="Architecture logicielle Poppy"></p>
 <h2 id="installation">Installation</h2>
-<p><strong>Tout d&#x2019;abord, notez que si vous n&#x2019;envisagez d&#x2019;utiliser que des robots r&#xE9;els, ils viennent avec Python et toutes les biblioth&#xE8;ques Poppy d&#xE9;j&#xE0; install&#xE9;es. Vous pouvez vous connecter directement au serveur Jupyter Notebook via l&apos;<a href="../getting-started/program-the-robot.md">interface web</a> et n&#x2019;avez rien &#xE0; installer sur votre machine !</strong></p>
+<p><strong>Tout d&#x2019;abord, notez que si vous n&#x2019;envisagez d&#x2019;utiliser que des robots r&#xE9;els, ils viennent avec Python et toutes les biblioth&#xE8;ques Poppy d&#xE9;j&#xE0; install&#xE9;es. Vous pouvez vous connecter directement au serveur Jupyter Notebook via l&apos;<a href="../getting-started/program-the-robot.html">interface web</a> et n&#x2019;avez rien &#xE0; installer sur votre machine !</strong></p>
 <p>Ce que vous devez installer est r&#xE9;sum&#xE9; dans le sch&#xE9;ma ci-dessous :</p>
 <p><img src="../img/python/what-to-install.png" alt="Ce qu&#x2019;il faut installer"></p>
 <p>Ainsi, si vous pr&#xE9;voyez de soit</p>
@@ -758,69 +866,66 @@
 <li>Utiliser un simulateur (p. ex. V-REP ou simulateur web),</li>
 <li>ou de brancher le robot &#xE0; votre ordinateur</li>
 </ul>
-<p>Vous devrez installer les biblioth&#xE8;ques Poppy localement. Elles fonctionnent sur Windows, Mac OSX, Linux et ont &#xE9;t&#xE9; test&#xE9;es sur :</p>
+<p>Vous devrez installer les biblioth&#xE8;ques Poppy localement. Elles fonctionnent sur Windows, Mac OSX, Linux et ont &#xE9;t&#xE9; test&#xE9;es sur Python &gt;= 3.5</p>
+<p>Si vous planifiez de brancher votre robot directement suir votre port USB, des pilotes additionnelles devront &#xEA;tre install&#xE9;s.</p>
+<p>Les &#xE9;tapes sont d&#xE9;taill&#xE9;es dans <a href="../installation/install-poppy-softwares.html">ce chapitre</a>.</p>
+<h2 id="pour-d&#xE9;marrer--bonjour-poppy-">Pour d&#xE9;marrer : Bonjour Poppy !</h2>
+<p>Afin de vous donner une vue d&apos;ensemble de ce que vous pouvez faire avec Poppy et Python, cette section va vous montrer comment :</p>
 <ul>
-<li>Python &gt;= 2.7</li>
-<li>Python &gt;= 3.4</li>
+<li>Crer et connecter votre robot</li>
+<li>Consulter les valeurs renvoy&#xE9;es par les capteurs et les moteurs</li>
+<li>Utiliser les primitives en enregistrant des mouvements</li>
 </ul>
-<p>Also note that if you are planning to directly plug your robot to your USB port, specific drivers should be installed.</p>
-<p>All steps are detailed in the chapter <em><a href="../installation/install-poppy-softwares.html">install Poppy software</a></em>.</p>
-<h2 id="quickstart-hello-poppy-world">Quickstart: Hello Poppy world!</h2>
-<p>To give you a rapid overview of what you can do using Python to program Poppy robots, this section will show you how to:</p>
+<p>Cette section ne pr&#xE9;tend pas tout couvrir ce qui est possible mais vous donne un bon bagage de d&#xE9;part. Pour un usage avanc&#xE9;, la section suivante vous pr&#xE9;sente des cahiers Jupyter Notebook &#xE0; suivre.</p>
+<p>Dans ces exemples, nous supposons que vous disposez d&apos;un environnement fonctionnel, c&#xE0;d que vous avez soit :</p>
 <ul>
-<li>Create and connect your robot</li>
-<li>Retrieve values from the sensor and send motor commands</li>
-<li>Start playing with primitive by recording motions by demonstration</li>
+<li>un robot branch&#xE9; avec sa Raspberry Pi : vous utiliser sont interpr&#xE9;teur Python pr&#xE9;install&#xE9; via le Jupyter Notebook</li>
+<li>install&#xE9; les biblioth&#xE8;ques logicielles de votre cr&#xE9;ature sur votre ordinateur pour utiliser le simulateur</li>
+<li>install&#xE9; les biblioth&#xE8;ques logicielles de votre cr&#xE9;ature sur votre ordinateur pour utiliser le robot branch&#xE9; en USB</li>
 </ul>
-<p>This section does not intend to cover everything that can be done in Python with Poppy but to give you sneak peaks of the most common features. For more advanced use, you should refer to the next section where we present a list of Jupyter notebooks each detailing a specific aspect or feature.</p>
-<p>In the following examples, we assume that you have a working environment meaning that you either:</p>
-<ul>
-<li>are using the Python embedded in your robot: through the Jupyter Notebook server,</li>
-<li>or you have installed everything locally to work with a simulator.</li>
-</ul>
-<h3 id="create-and-connect-to-a-poppy-robot">Create and connect to a Poppy robot</h3>
-<h4 id="import-the-library">Import the library</h4>
-<p>The very first step you have to do to start programming Poppy robots in Python is to import the library. In Python they are called <a href="https://docs.python.org/2/tutorial/modules.html" target="_blank">module or package</a>.</p>
-<p>To do that, you write something similar to:</p>
-<pre><code class="lang-python"><span class="hljs-keyword">from</span> poppy.creatures <span class="hljs-keyword">import</span> *
+<h3 id="cr&#xE9;er-et-se-connecter-au-robot">Cr&#xE9;er et se connecter au robot</h3>
+<h4 id="importer-la-bilbioth&#xE8;que">Importer la bilbioth&#xE8;que</h4>
+<p>La toute premi&#xE8;re &#xE9;tape est d&apos;importer la bilbioth&#xE8;que. Dans Python elles s&apos;appellent des <a href="https://docs.python.org/3/tutorial/modules.html" target="_blank">modules ou packages</a>.</p>
+<p>Pour ce faire, la syntaxe est la suivante:</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> pypot.creatures <span class="hljs-keyword">import</span> *
 </code></pre>
-<p>This will actually import all Poppy robots installed on the Python distribution you are using. If you want to use a specific robot, you can replace the <em>*</em> (which means all here) by the name of the robot you want.</p>
-<p>For the ErgoJr:</p>
-<pre><code class="lang-python"><span class="hljs-keyword">from</span> poppy.creatures <span class="hljs-keyword">import</span> PoppyErgoJr
+<p>L&apos;&#xE9;toile signifie &quot;<em>tout</em>&quot;, ce qui veut dire que nous allons importer toutes les cr&#xE9;atures Poppy install&#xE9;es sur votre ordinateur. Mais il est possible d&apos;en improter qu&apos;une seule ...</p>
+<p>... par exemple celle de l&apos;Ergo Jr :</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> pypot.creatures <span class="hljs-keyword">import</span> PoppyErgoJr
 </code></pre>
-<p>For the Torso:</p>
-<pre><code class="lang-python"><span class="hljs-keyword">from</span> poppy.creatures <span class="hljs-keyword">import</span> PoppyTorso
+<p>... par exemple celle de Torso :</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> pypot.creatures <span class="hljs-keyword">import</span> PoppyTorso
 </code></pre>
-<p>For the Humanoid:</p>
-<pre><code class="lang-python"><span class="hljs-keyword">from</span> poppy.creatures <span class="hljs-keyword">import</span> PoppyHumanoid
+<p>... par exemple celle d&apos;Humanoid :</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> pypot.creatures <span class="hljs-keyword">import</span> PoppyHumanoid
 </code></pre>
 <blockquote class="clearfix alert alert-info"><strong class="fa fa-2x fa-edit"></strong>
-<p> If you see an error similar to the one below when executing the previous line, this means that the libraries are not correctly installed. See the section <em><a href="../installation/install-poppy-softwares.html">install Poppy software</a></em>.</p>
+<p> Si une erreur similaire &#xE0; cette capture d&apos;&#xE9;cran appara&#xEE;t (erreur nomm&#xE9;e <code>Import Error</code>), alors votre installation des biblioth&#xE8;que Python a probablement &#xE9;chou&#xE9;. Reportez-vous &#xE0; la section d&apos;<a href="../installation/install-poppy-softwares.html">installation</a> pour recommencer.</p>
 </blockquote>
-<pre><code class="lang-python">In [1]: from poppy.creatures import PoppyHumanoid
+<pre><code class="lang-python">In [1]: from pypot.creatures import PoppyHumanoid
 ImportError Traceback (most recent call last)
 &lt;ipython-input-1-18e4c5a36525&gt; in &lt;module&gt;()
-----&gt; 1 from poppy.creatures import PoppyHumanoid
+----&gt; 1 from pypot.creatures import PoppyHumanoid
 
 ImportError: cannot import name PoppyHumanoid
 </code></pre>
-<h4 id="create-the-robot-object---with-a-real-robot">Create the Robot object - with a real robot</h4>
-<p>Then, you can actually create the Python object that will represent your robot. Depending on the Poppy robot you are using:</p>
-<pre><code class="lang-python"><span class="hljs-comment"># if you are using an Ergo Jr</span>
-poppy = PoppyErgoJr()
+<h4 id="cr&#xE9;er-lobjet-robot-avec-un-robot-r&#xE9;el">Cr&#xE9;er l&apos;objet &quot;Robot&quot; (avec un robot r&#xE9;el)</h4>
+<p>L&apos;objet Robot est celui qui repr&#xE9;sente votre robot en Pyton. Selon votre cr&#xE9;ature, vous devez cr&#xE9;er un objet diff&#xE9;rent ...</p>
+<p>... pour importer l&apos;objet de l&apos;Ergo Jr :</p>
+<pre><code class="lang-python">poppy = PoppyErgoJr()
 </code></pre>
-<p>or</p>
-<pre><code class="lang-python"><span class="hljs-comment"># if you are using a Torso</span>
-poppy = PoppyTorso()
+<p>... pour importer l&apos;objet de Torso :</p>
+<pre><code class="lang-python">poppy = PoppyTorso()
 </code></pre>
-<p>or</p>
+<p>... pour importer l&apos;objet de l&apos;Humanoid :</p>
 <pre><code class="lang-python"><span class="hljs-comment"># if you are using a Humanoid</span>
 poppy = PoppyHumanoid()
 </code></pre>
-<p>And that&apos;s it, if you did not see any error message it means that you are connected to your robot. If you see an exception like the one shown below, you should check the wire connection and try again:</p>
+<p>Si aucune erreur n&apos;appara&#xEE;t, alors votre interpr&#xE9;teur Python est correctement connect&#xE9;. En revanche si une erreur similaire &#xE0; ceci apparait, alors certains de vos moteurs (voire tous) sont peut-&#xEA;tre mal connect&#xE9;s ou d&#xE9;fecteueux. V&#xE9;rifiez leur connectique et le sch&#xE9;ma de montage.</p>
+<p><strong>Note</strong> Lorsqu&apos;elle survient, cette erreur vous indiquer le num&#xE9;ro du ou des moteur(s) posant probl&#xE8;me entre les crochets, cela peut vous aider &#xE0; situer la source du probl&#xE8;me. </p>
 <pre><code class="lang-python">IOError: Connection to the robot failed! No suitable port found <span class="hljs-keyword">for</span> ids [<span class="hljs-number">3</span>, <span class="hljs-number">5</span>, <span class="hljs-number">7</span>, <span class="hljs-number">11</span>, <span class="hljs-number">13</span>, <span class="hljs-number">17</span>]. These ids are missing [<span class="hljs-number">3</span>, <span class="hljs-number">5</span>, <span class="hljs-number">7</span>, <span class="hljs-number">11</span>, <span class="hljs-number">13</span>, <span class="hljs-number">17</span>] !
 </code></pre>
-<h4 id="create-the-robot-object---with-v-rep">Create the Robot object - with V-REP</h4>
+<h4 id="cr&#xE9;er-lobjet-robot---avec-coppeliasim-v-rep">Cr&#xE9;er l&apos;objet Robot - avec CoppeliaSim (V-REP)</h4>
 <p>To use a simulated robot instead of a real one, you only have to specify it when creating the Robot object. For instance, if you want to create a simulated Poppy Torso, you simply have to execute the following line:</p>
 <pre><code class="lang-python">poppy = PoppyTorso(simulator=<span class="hljs-string">&apos;vrep&apos;</span>)
 </code></pre>
@@ -968,7 +1073,7 @@ pos_2 = {<span class="hljs-string">&apos;m1&apos;</span>: <span class="hljs-numb
 </li>
 </ul>
 <p>Here, we will record a move on the whole robot at 50Hz:</p>
-<pre><code class="lang-python">recorder = MoveRecorder(poppy, <span class="hljs-number">50</span>, poppy.motors)
+<pre><code class="lang-python">record = MoveRecorder(poppy, <span class="hljs-number">50</span>, poppy.motors)
 </code></pre>
 <blockquote class="clearfix alert alert-info"><strong class="fa fa-2x fa-edit"></strong>
 <p> We used <em>poppy.motors</em> to specify that we want all motors if you only want let&apos;s say the two first motors of an Ergo Jr you could have used <em>[poppy.m1, poppy.m2]</em> instead.</p>
@@ -1038,7 +1143,7 @@ player = MovePlayer(poppy, my_recorded_move)
 </blockquote>
 <h4 id="demo-version">Demo version</h4>
 <p>Before writing the sensori-motor loop, we will first set the Ergo Jr in a base position.</p>
-<pre><code class="lang-python"><span class="hljs-keyword">from</span> poppy.creatures <span class="hljs-keyword">import</span> PoppyErgoJr
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> pypot.creatures <span class="hljs-keyword">import</span> PoppyErgoJr
 
 jr = PoppyErgoJr()
 
@@ -1172,7 +1277,7 @@ head_straight.start()
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Programmation en Python","level":"4.1.3","depth":2,"next":{"title":"API des robots","level":"4.1.4","depth":2,"path":"programming/rest.md","ref":"programming/rest.md","articles":[]},"previous":{"title":"Utilisation des notebooks Jupyter","level":"4.1.2","depth":2,"path":"programming/notebooks.md","ref":"programming/notebooks.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-share","anchorjs","build","copy-code-button","custom-favicon","download-pdf-link","github","language-picker","localized-footer","page-toc","piwik","richquotes","search-plus","sitemap","toggle-chapters","toggle-headers","youtube"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"piwik":{"jsPath":"piwik.js","phpPath":"piwik.php","URL":"piwik.inria.fr/","siteId":66},"language-picker":{"grid-columns":3},"youtube":{},"github":{"url":"https://github.com/poppy-project/poppy-docs"},"page-toc":{"position":"before-first","selector":".markdown-section h2, .markdown-section h3"},"localized-footer":{"filename":"FOOTER.md","hline":"true"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"toggle-headers":{},"build":{"args":[],"bin":"pandoc","format":"latex","opts":{},"output":"_book/main.tex","template":"_layouts/main.tex"},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{},"highlight":{},"favicon":"img/logo/favicon-128.ico","sitemap":{"hostname":"https://docs.poppy-project.org/"},"custom-favicon":{},"copy-code-button":{},"download-pdf-link":{"label":{"en":"Download PDF","fr":"Télécharger en PDF"},"base":"https://www.gitbook.com/download/pdf/book/poppy-project/poppy-docs","multilingual":true},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["twitter","facebook","google","weibo","instapaper"]},"edit-link":{"base":"https://github.com/poppy-project/poppy-docs/edit/master/","label":{"en":"Edit this page","fr":"Editez cette page"}},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchorjs":{},"toggle-chapters":{},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"poppy_doc_version":"1.0","poppy-humanoid_humanoid_hardware_version":"1.0","poppy-humanoid_humanoid_software_version":"1.0","poppy-torso_hardware_version":"1.0","poppy-torso_software_version":"1.0","poppy-ergo-jr_hardware_version":"1.0","poppy-ergo-jr_software_version":"1.0"},"title":"Documentation of the Poppy Platform","language":"fr","gitbook":"*"},"file":{"path":"programming/python.md","mtime":"2017-10-23T15:46:48.369Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-10-23T15:51:01.667Z"},"basePath":"..","book":{"language":"fr"}});
+            gitbook.page.hasChanged({"page":{"title":"Programmation en Python","level":"4.1.3","depth":2,"next":{"title":"API des robots","level":"4.1.4","depth":2,"path":"programming/rest.md","ref":"programming/rest.md","articles":[]},"previous":{"title":"Utilisation des notebooks Jupyter","level":"4.1.2","depth":2,"path":"programming/notebooks.md","ref":"programming/notebooks.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-share","anchorjs","build","copy-code-button","custom-favicon","download-pdf-link","github","language-picker","localized-footer","page-toc","piwik","richquotes","search-plus","sitemap","toggle-chapters","toggle-headers","youtube"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"piwik":{"jsPath":"piwik.js","phpPath":"piwik.php","URL":"piwik.inria.fr/","siteId":66},"language-picker":{"grid-columns":3},"youtube":{},"github":{"url":"https://github.com/poppy-project/poppy-docs"},"page-toc":{"position":"before-first","selector":".markdown-section h2, .markdown-section h3","showByDefault":true},"localized-footer":{"filename":"FOOTER.md","hline":"true"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"toggle-headers":{},"build":{"args":[],"bin":"pandoc","format":"latex","opts":{},"output":"_book/main.tex","template":"_layouts/main.tex"},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{},"highlight":{},"favicon":"img/logo/favicon-128.ico","sitemap":{"hostname":"https://docs.poppy-project.org/"},"custom-favicon":{},"copy-code-button":{},"download-pdf-link":{"label":{"en":"Download PDF","fr":"Télécharger en PDF"},"base":"https://www.gitbook.com/download/pdf/book/poppy-project/poppy-docs","multilingual":true},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["twitter","facebook","google","weibo","instapaper"]},"edit-link":{"base":"https://github.com/poppy-project/poppy-docs/edit/master/","label":{"en":"Edit this page","fr":"Editez cette page"}},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchorjs":{},"toggle-chapters":{},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"poppy_doc_version":"1.0","poppy-humanoid_humanoid_hardware_version":"1.0","poppy-humanoid_humanoid_software_version":"1.0","poppy-torso_hardware_version":"1.0","poppy-torso_software_version":"1.0","poppy-ergo-jr_hardware_version":"1.0","poppy-ergo-jr_software_version":"1.0"},"title":"Documentation of the Poppy Platform","language":"fr","gitbook":"*"},"file":{"path":"programming/python.md","mtime":"2020-08-25T16:43:49.288Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-25T16:44:47.238Z"},"basePath":"..","book":{"language":"fr"}});
         });
     </script>
 </div>
@@ -1183,7 +1288,7 @@ head_straight.start()
     <script src="../../gitbook/theme.js"></script>
     
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.1.1/anchor.min.js"></script>
+        <script src="../../gitbook/gitbook-plugin-anchorjs/anchor.min.js"></script>
         
     
         

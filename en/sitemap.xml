@@ -18,6 +18,8 @@
 <url> <loc>https://docs.poppy-project.org/undefinedassembly-guides/ergo-jr/electronic-assembly.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://docs.poppy-project.org/undefinedassembly-guides/ergo-jr/motor-configuration.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://docs.poppy-project.org/undefinedassembly-guides/ergo-jr/mechanical-construction.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://docs.poppy-project.org/undefinedassembly-guides/poppycustom/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://docs.poppy-project.org/undefinedassembly-guides/poppycustom/dragster-mini/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://docs.poppy-project.org/undefinedassembly-guides/poppy-humanoid/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://docs.poppy-project.org/undefinedassembly-guides/poppy-torso/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://docs.poppy-project.org/undefinedprogramming/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>

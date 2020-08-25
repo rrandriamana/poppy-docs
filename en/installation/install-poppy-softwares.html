@@ -411,12 +411,48 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2" data-path="../assembly-guides/poppy-humanoid/">
+        <li class="chapter " data-level="3.2" data-path="../assembly-guides/poppycustom/">
+            
+                <a href="../assembly-guides/poppycustom/">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    Custom your Ergo Jr
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="../assembly-guides/poppycustom/dragster-mini/">
+            
+                <a href="../assembly-guides/poppycustom/dragster-mini/">
+            
+                    
+                        <b>3.2.1.</b>
+                    
+                    Assemble the Dragster Mini
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../assembly-guides/poppy-humanoid/">
             
                 <a href="../assembly-guides/poppy-humanoid/">
             
                     
-                        <b>3.2.</b>
+                        <b>3.3.</b>
                     
                     Assemble the Poppy Humanoid
             
@@ -426,12 +462,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.3" data-path="../assembly-guides/poppy-torso/">
+        <li class="chapter " data-level="3.4" data-path="../assembly-guides/poppy-torso/">
             
                 <a href="../assembly-guides/poppy-torso/">
             
                     
-                        <b>3.3.</b>
+                        <b>3.4.</b>
                     
                     Assemble the Poppy Torso
             
@@ -803,51 +839,35 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="install-poppy-softwares">Install Poppy softwares</h1>
+                                <h1 id="install-poppy-software">Install Poppy software</h1>
 <blockquote class="clearfix alert alert-warning"><strong class="fa fa-2x fa-exclamation-triangle"></strong>
-<p> If you want to install the board of a tangible robot, go to the <a href="burn-an-image-file.html">startup chapter</a> instead.</p>
+<p> If you want to install the board of a real robot, go to the <a href="burn-an-image-file.html">startup chapter</a> instead.</p>
 </blockquote>
-<p>This section will guide you to install Poppy softwares on your personal computer. It is useful <strong>only</strong> if you are in one of these situations:</p>
+<p>This section will guide you to install Poppy software on your personal computer. It is useful <strong>only</strong> if you are in one of these situations:</p>
 <ul>
 <li>You want to control a simulated robot.</li>
 <li>You want to control a Poppy creature from your computer <strong>without</strong> using the embedded board (Odroid or Raspberry Pi).</li>
 </ul>
-<p>Poppy creatures are run by Python computer code. Depending on your operating system you will have to install Python and in any case you&apos;ll have to install the required software libraries. If you are getting started with Python and want to install a full Python environment for scientific computing, <strong>we suggest you to use <a href="https://www.continuum.io/why-anaconda" target="_blank">Anaconda Python distribution</a></strong>.</p>
-<h2 id="install-python-and-poppy-software-on-windows">Install Python and Poppy software on Windows</h2>
-<p>If you want a step by step screencast of the installation of Anaconda on Windows, you can see <a href="https://www.youtube.com/watch?v=kw9lQwdOlOs&amp;list=PLT6NsCw8bf8T5FG2LGk2y_KTdexi8A5BN" target="_blank">these videos</a> (this is a YouTube playlist).</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLT6NsCw8bf8T5FG2LGk2y_KTdexi8A5BN" frameborder="0" allowfullscreen></iframe>
-
-
-<h3 id="install-python-and-poppy-softwares-on-windows">Install Python and Poppy softwares on Windows</h3>
-<p>We encourage the use of the Anaconda Python distribution.
-However, if you already installed a Python distribution like Canopy (shipped with scientific packages), you can directly <a href="#install-python-and-poppy-softwares-on-windows">install Poppy software</a>.</p>
+<p>Poppy creatures are run by Python computer code. Depending on your operating system you will have to install Python and in any case you&apos;ll have to install the required software libraries. </p>
+<h2 id="1-install-python">1. Install Python...</h2>
+<h3 id="on-windows">...on Windows</h3>
+<p>Download and install the last version of <a href="https://www.python.org/downloads/windows" target="_blank">Python for Windows (x86-64 executable installer)</a>. Make sure you activate the checkbox <strong>Add Python to PATH</strong> during installation, otherwise Windows wouldn&apos;t find Python in the next steps.</p>
 <blockquote class="clearfix alert alert-info"><strong class="fa fa-2x fa-info"></strong>
-<p> Poppy software libraries work in Python 2.7 and Python 3.3+. If you have no ideas on which version to install, we suggest you to use Python 2.7 as we develop in this version.</p>
+<p> Poppy software libraries work with Python 3.5.x and later. Anaconda and Python 2.x.x are no longer supported starting from pypot &gt;= 4.0.0.</p>
 </blockquote>
-<h4 id="anaconda-python-distribution">Anaconda Python distribution</h4>
-<p><a href="https://www.continuum.io/downloads" target="_blank">Download Anaconda</a> Python distribution (400 MB) <a href="https://repo.continuum.io/archive/Anaconda2-4.0.0-Windows-x86_64.exe" target="_blank">here for 64-bit</a> computer or <a href="https://repo.continuum.io/archive/Anaconda2-4.0.0-Windows-x86.exe" target="_blank">here for 32-bit</a>.</p>
-<p>Install it by clicking on &quot;next&quot; at each step. If you intend to install Anaconda for all users of your computer, be sure to select &quot;all users&quot;.</p>
-<p><img src="../img/python/lucvincent/luc_vincent-012.png" alt="Anaconda all users">.</p>
-<p>It is also very important that the two check-boxes of the PATH and the default Python are checked.</p>
-<p><img src="../img/python/anaconda_install_path.png" alt="Anaconda install"></p>
-<p>Now you have a Python distribution, you are ready to <a href="#install-python-and-poppy-softwares-on-windows">install Poppy software</a>.</p>
-<h4 id="miniconda-python-alternative-to-anaconda">Miniconda Python (alternative to Anaconda)</h4>
-<p>Miniconda is a &quot;light&quot; version of Anaconda which contain only Python and the conda package manager. You can install it <strong>instead of Anaconda</strong> and save a lot of disk space (25 Mo vs 400 Mo), but you will have to do another step in the install process, and you will not have Jupyter notebook shortcut on the desktop.
-Download miniconda <a href="https://repo.continuum.io/miniconda/Miniconda-latest-Windows-x86_64.exe" target="_blank">here for 64-bit</a> computer or <a href="https://repo.continuum.io/miniconda/Miniconda-latest-Windows-x86.exe" target="_blank">here for 32-bit</a> computer.</p>
-<p>Install it and be sure that the two check-boxes of the PATH and the default Python are checked.</p>
-<p>Open the Command Prompt (press the windows key and type &quot;Command Prompt&quot;), type and press Enter to execute the command below:</p>
-<pre><code>conda install numpy scipy notebook jupyter matplotlib
-</code></pre><p>Now you have a Python distribution ready to <a href="#install-python-and-poppy-softwares-on-windows">install Poppy software</a>.</p>
-<h3 id="install-poppy-software-on-windows">Install Poppy software on Windows</h3>
-<p>Open the prompt of your Python Distribution (called <em>Anaconda Prompt</em> for Anaconda) or the <em>Command Prompt</em> of Windows, type and press Enter to execute the command below:
-<img src="../img/python/lucvincent/luc_vincent-031.png" alt="Anaconda all users">.</p>
+<h3 id="on-gnulinux-ubuntu-fedora-archlinux">...on GNU/Linux (Ubuntu, Fedora, Archlinux...)</h3>
+<p>Most of GNU/Linux distributions are already equipped with Python, thus you can just go ahead. Just replace all <code>pip</code> commands by <code>pip3</code>, that will enforce the use of Python 3 since some distributions still work with Python 2 as well. </p>
+<h2 id="2-install-poppy-software">2. Install Poppy software</h2>
+<p>Now Python is installed in you Operating System, let&apos;s install the Poppy software.
+Open the Windows shell (aka <em>cmd</em>) from your Windows menu. In the terminal (the black screen), type the command below and press Enter to execute it:</p>
+<pre><code class="lang-bash">pip install poppy-ergo-jr
+</code></pre>
 <blockquote class="clearfix alert alert-info"><strong class="fa fa-2x fa-edit"></strong>
-<p> Substitute &quot;poppy-ergo-jr&quot; with &quot;poppy-torso&quot; or &quot;poppy-humanoid&quot; to install respectively a Poppy Torso or a Poppy Humanoid.</p>
+<p> This command tells Python to install the package corresponding to the Popppy Ergo Jr robot. Substitute &quot;poppy-ergo-jr&quot; with &quot;poppy-torso&quot; or &quot;poppy-humanoid&quot; to install respectively a Poppy Torso or a Poppy Humanoid.</p>
+<p><strong>Info</strong> If an error tells you that <em>pip</em> is not recognized or not found, your Python installation probably failed in the previous step. Make it again.</p>
 </blockquote>
-<pre><code>pip install poppy-ergo-jr
-</code></pre><p>This will install everything necessary to control a Poppy Ergo Jr.</p>
-<h3 id="upgrade-poppy-software-on-windows">Upgrade Poppy software on Windows</h3>
-<p>In case of update, it is advised to upgrade pypot (the motor library control) and the creature package separately:</p>
+<h3 id="upgrade-poppy-software">Upgrade Poppy software</h3>
+<p>Skip this step if this is your first install. In case of update, it is advised to upgrade pypot (the motor library control) and the creature package separately:</p>
 <blockquote class="clearfix alert alert-info"><strong class="fa fa-2x fa-edit"></strong>
 <p> Substitute &quot;poppy-ergo-jr&quot; with &quot;poppy-torso&quot; or &quot;poppy-humanoid&quot; to install respectively a Poppy Torso or a Poppy Humanoid.</p>
 </blockquote>
@@ -860,81 +880,11 @@ pip install poppy-ergo-jr --upgrade --no-deps
 <p> To understand commands above</p>
 <ul>
 <li><em>--upgrade</em> will uninstall before starting the install</li>
-<li><em>--no-deps</em> will avoid installing dependencies, this is usefull to avoid pip to compile <em>scipy</em> as it will probably fail of you have not GCC and Fortran dependancies.</li>
+<li><em>--no-deps</em> will avoid installing dependencies, this is usefull to avoid pip to compile <em>scipy</em> as it will probably fail of you have not GCC and Fortran dependencies.</li>
 </ul>
 </blockquote>
-<h2 id="install-python-and-poppy-software-on-mac-osx">Install Python and Poppy software on Mac OSX</h2>
-<p>Mac OSX has a Python distribution installed by default. Before installing Poppy software, you need to install the Python package manager <strong>pip</strong>.
-Open a terminal copy and press enter to execute the command below:</p>
-<pre><code>curl --silent --show-error --retry 5 https://bootstrap.pypa.io/get-pip.py | sudo python
-</code></pre><p>You can now install Poppy software for the creature of your choice:</p>
-<blockquote class="clearfix alert alert-info"><strong class="fa fa-2x fa-edit"></strong>
-<p> Substitute &quot;poppy-ergo-jr&quot; with &quot;poppy-torso&quot; or &quot;poppy-humanoid&quot; to install respectively a Poppy Torso or a Poppy Humanoid.</p>
-</blockquote>
-<pre><code>pip install poppy-ergo-jr --upgrade
-</code></pre><h2 id="install-python-and-poppy-software-on-gnulinux">Install Python and Poppy software on GNU/Linux</h2>
-<p>Most of GNU/Linux distributions, have already a Python distribution installed by default, but if</p>
-<h3 id="install-miniconda-python-distribution">Install Miniconda Python distribution</h3>
-<blockquote class="clearfix alert alert-info"><strong class="fa fa-2x fa-info"></strong>
-<p> Poppy software libraries work in Python 2.7 and Python 3.3+. If you have no ideas on which version to install, we suggest you to use Python 2.7 as we develop in this version.</p>
-</blockquote>
-<p>If you want to have up-to-date numpy, scipy and jupyter without having to compile them, we suggest you to install Anaconda or at least the conda package manager distributed with miniconda.
-Download miniconda (64-bit) with these command below in your terminal:</p>
-<pre><code>curl -o miniconda.sh http://repo.continuum.io/miniconda/Miniconda-latest-Linux-x86_64.sh
-</code></pre><p>If you have a 32-bit computer</p>
-<pre><code> curl -o miniconda.sh http://repo.continuum.io/miniconda/Miniconda-latest-Linux-x86.sh
-</code></pre><p>Execute commands below and follow the instructions to install miniconda:</p>
-<pre><code>chmod +x miniconda.sh
-./miniconda.sh
-</code></pre><p>You can now install some required and other useful dependencies for Poppy software with conda:</p>
-<pre><code>conda install numpy scipy notebook jupyter matplotlib
-</code></pre><p>You can now <a href="#install-poppy-software-on-gnulinux">install Poppy software</a>.</p>
-<h3 id="install-dependancies-with-your-operating-system-package-manager-alternative-solution-to-anacondaminiiconda">Install dependancies with your operating system package manager (alternative solution to Anaconda/Miniiconda)</h3>
-<p>Pypot, the main library of the robot is depending (amongst some other) on two big scientific libraries <em>Numpy</em> and <em>Scipy</em> which are themselves depending on C and Fortran code. These libraries may be installed with the Python package system (pip), but because of the huge number and differences between GNU/Linux distributions pip is not able to distribute binaries for Linux so all dependencies must be compiled... The solution to avoid the compilation of numpy and scipy is to install them with your distribution package manager.</p>
-<p>On Ubuntu &amp; Debian:</p>
-<pre><code class="lang-bash">curl --silent --show-error --retry 5 https://bootstrap.pypa.io/get-pip.py | sudo python
-sudo apt-get install gcc build-essential python-dev python-numpy python-scipy python-matplotlib
-sudo pip install jupyter
-</code></pre>
-<p>On Fedora:</p>
-<pre><code class="lang-bash">curl --silent --show-error --retry 5 https://bootstrap.pypa.io/get-pip.py | sudo python
-sudo yum install gcc python-devel numpy scipy python-matplotlib
-sudo pip install jupyter
-</code></pre>
-<p>On Arch Linux:</p>
-<pre><code class="lang-bash">curl --silent --show-error --retry 5 https://bootstrap.pypa.io/get-pip.py | sudo python
-sudo pacman -S python2-scipy python2-numpy python2-matplotlib
-sudo pip install jupyter
-</code></pre>
-<p>You can now <a href="#install-poppy-software-on-gnulinux">install Poppy software</a>.</p>
-<blockquote class="clearfix alert alert-info"><strong class="fa fa-2x fa-edit"></strong>
-<p> The downside is the Python libraries from you distribution system are very often out of date.</p>
-</blockquote>
-<h3 id="install-poppy-software-on-gnulinux">Install Poppy software on GNU/Linux</h3>
-<p>Open the terminal, copy and press enter to execute the command below:</p>
-<blockquote class="clearfix alert alert-info"><strong class="fa fa-2x fa-edit"></strong>
-<p> Substitute &quot;poppy-ergo-jr&quot; with &quot;poppy-torso&quot; or &quot;poppy-humanoid&quot; to install respectively a Poppy Torso or a Poppy Humanoid.</p>
-</blockquote>
-<pre><code>pip install poppy-ergo-jr --user
-</code></pre><p>This will install everything necessary to control a Poppy Ergo Jr.</p>
-<h3 id="upgrade-poppy-software-on-gnulinux">Upgrade Poppy software on GNU/Linux</h3>
-<p>In case of update, it is advised to upgrade pypot (the motor library control) and the creature package separately:</p>
-<blockquote class="clearfix alert alert-info"><strong class="fa fa-2x fa-edit"></strong>
-<p> Substitute &quot;poppy-ergo-jr&quot; with &quot;poppy-torso&quot; or &quot;poppy-humanoid&quot; to install respectively a Poppy Torso or a Poppy Humanoid.</p>
-</blockquote>
-<pre><code class="lang-bash">
-pip install pypot --upgrade --no-deps
-pip install poppy-creature --upgrade --no-deps
-pip install poppy-ergo-jr --upgrade --no-deps
-</code></pre>
-<blockquote class="clearfix alert alert-info"><strong class="fa fa-2x fa-info"></strong>
-<p> To understand commands above</p>
-<ul>
-<li><em>--user</em> will install Python package in user directories, it avoid using <code>sudo</code> if you use the Python of your OS.</li>
-<li><em>--upgrade</em> will uninstall before starting the install</li>
-<li><em>--no-deps</em> will avoid installing dependencies, this is usefull to avoid pip to compile <em>scipy</em> as it will probably fail of you have not Fortran dependancies</li>
-</ul>
-</blockquote>
+<h2 id="youre-done">You&apos;re done!</h2>
+<p>If you followed steps 1 and 2 and met no specific error during the process, you successfully installed Python libraries for Poppy robot on your computer. </p>
 <p><div id="page-footer" class="localized-footer"><hr><h4 id="questions-">Questions ?</h4>
 <p>We&apos;re always happy to help with code or other questions you might have! You can ask questions and share solutions on our <a href="https://forum.poppy-project.org" target="_blank">community Forum</a>.</p>
 </div></p>
@@ -981,7 +931,7 @@ pip install poppy-ergo-jr --upgrade --no-deps
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Install Poppy softwares","level":"2.1.3","depth":2,"next":{"title":"Install V-REP simulator","level":"2.1.4","depth":2,"path":"installation/install-vrep.md","ref":"installation/install-vrep.md","articles":[]},"previous":{"title":"Download and burn the system image","level":"2.1.2","depth":2,"path":"installation/burn-an-image-file.md","ref":"installation/burn-an-image-file.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-share","anchorjs","build","copy-code-button","custom-favicon","download-pdf-link","github","language-picker","localized-footer","page-toc","piwik","richquotes","search-plus","sitemap","toggle-chapters","toggle-headers","youtube"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"piwik":{"jsPath":"piwik.js","phpPath":"piwik.php","URL":"piwik.inria.fr/","siteId":66},"language-picker":{"grid-columns":3},"youtube":{},"github":{"url":"https://github.com/poppy-project/poppy-docs"},"page-toc":{"position":"before-first","selector":".markdown-section h2, .markdown-section h3"},"localized-footer":{"filename":"FOOTER.md","hline":"true"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"toggle-headers":{},"build":{"args":[],"bin":"pandoc","format":"latex","opts":{},"output":"_book/main.tex","template":"_layouts/main.tex"},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{},"highlight":{},"favicon":"img/logo/favicon-128.ico","sitemap":{"hostname":"https://docs.poppy-project.org/"},"custom-favicon":{},"copy-code-button":{},"download-pdf-link":{"label":{"en":"Download PDF","fr":"Télécharger en PDF"},"base":"https://www.gitbook.com/download/pdf/book/poppy-project/poppy-docs","multilingual":true},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["twitter","facebook","google","weibo","instapaper"]},"edit-link":{"base":"https://github.com/poppy-project/poppy-docs/edit/master/","label":{"en":"Edit this page","fr":"Editez cette page"}},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchorjs":{},"toggle-chapters":{},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"poppy_doc_version":"1.0","poppy-humanoid_humanoid_hardware_version":"1.0","poppy-humanoid_humanoid_software_version":"1.0","poppy-torso_hardware_version":"1.0","poppy-torso_software_version":"1.0","poppy-ergo-jr_hardware_version":"1.0","poppy-ergo-jr_software_version":"1.0"},"title":"Documentation of the Poppy Platform","language":"en","gitbook":"*"},"file":{"path":"installation/install-poppy-softwares.md","mtime":"2017-10-23T15:46:48.337Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-10-23T15:51:01.667Z"},"basePath":"..","book":{"language":"en"}});
+            gitbook.page.hasChanged({"page":{"title":"Install Poppy softwares","level":"2.1.3","depth":2,"next":{"title":"Install V-REP simulator","level":"2.1.4","depth":2,"path":"installation/install-vrep.md","ref":"installation/install-vrep.md","articles":[]},"previous":{"title":"Download and burn the system image","level":"2.1.2","depth":2,"path":"installation/burn-an-image-file.md","ref":"installation/burn-an-image-file.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-share","anchorjs","build","copy-code-button","custom-favicon","download-pdf-link","github","language-picker","localized-footer","page-toc","piwik","richquotes","search-plus","sitemap","toggle-chapters","toggle-headers","youtube"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"piwik":{"jsPath":"piwik.js","phpPath":"piwik.php","URL":"piwik.inria.fr/","siteId":66},"language-picker":{"grid-columns":3},"youtube":{},"github":{"url":"https://github.com/poppy-project/poppy-docs"},"page-toc":{"position":"before-first","selector":".markdown-section h2, .markdown-section h3","showByDefault":true},"localized-footer":{"filename":"FOOTER.md","hline":"true"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"toggle-headers":{},"build":{"args":[],"bin":"pandoc","format":"latex","opts":{},"output":"_book/main.tex","template":"_layouts/main.tex"},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{},"highlight":{},"favicon":"img/logo/favicon-128.ico","sitemap":{"hostname":"https://docs.poppy-project.org/"},"custom-favicon":{},"copy-code-button":{},"download-pdf-link":{"label":{"en":"Download PDF","fr":"Télécharger en PDF"},"base":"https://www.gitbook.com/download/pdf/book/poppy-project/poppy-docs","multilingual":true},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["twitter","facebook","google","weibo","instapaper"]},"edit-link":{"base":"https://github.com/poppy-project/poppy-docs/edit/master/","label":{"en":"Edit this page","fr":"Editez cette page"}},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchorjs":{},"toggle-chapters":{},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"poppy_doc_version":"1.0","poppy-humanoid_humanoid_hardware_version":"1.0","poppy-humanoid_humanoid_software_version":"1.0","poppy-torso_hardware_version":"1.0","poppy-torso_software_version":"1.0","poppy-ergo-jr_hardware_version":"1.0","poppy-ergo-jr_software_version":"1.0"},"title":"Documentation of the Poppy Platform","language":"en","gitbook":"*"},"file":{"path":"installation/install-poppy-softwares.md","mtime":"2020-08-25T16:43:49.280Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-25T16:44:47.238Z"},"basePath":"..","book":{"language":"en"}});
         });
     </script>
 </div>
@@ -992,7 +942,7 @@ pip install poppy-ergo-jr --upgrade --no-deps
     <script src="../../gitbook/theme.js"></script>
     
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.1.1/anchor.min.js"></script>
+        <script src="../../gitbook/gitbook-plugin-anchorjs/anchor.min.js"></script>
         
     
         

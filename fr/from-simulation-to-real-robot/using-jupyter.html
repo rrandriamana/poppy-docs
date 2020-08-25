@@ -139,6 +139,81 @@
             
         </li>
     
+        <li class="chapter " data-level="1.3" data-path="../getting-started/build.html">
+            
+                <a href="../getting-started/build.html">
+            
+                    
+                        <b>1.3.</b>
+                    
+                    Construire un robot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../getting-started/connect.html">
+            
+                <a href="../getting-started/connect.html">
+            
+                    
+                        <b>1.4.</b>
+                    
+                    Se connecter au robot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../getting-started/program-the-robot.html">
+            
+                <a href="../getting-started/program-the-robot.html">
+            
+                    
+                        <b>1.5.</b>
+                    
+                    Programmer un robot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../getting-started/visualize.html">
+            
+                <a href="../getting-started/visualize.html">
+            
+                    
+                        <b>1.6.</b>
+                    
+                    Visualiser
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../getting-started/example-of-projects.html">
+            
+                <a href="../getting-started/example-of-projects.html">
+            
+                    
+                        <b>1.7.</b>
+                    
+                    Exemples de projets
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -330,12 +405,48 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2" data-path="../assembly-guides/poppy-humanoid/">
+        <li class="chapter " data-level="3.2" data-path="../assembly-guides/poppycustom/">
+            
+                <a href="../assembly-guides/poppycustom/">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    Custom your Ergo Jr
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="../assembly-guides/poppycustom/dragster-mini/">
+            
+                <a href="../assembly-guides/poppycustom/dragster-mini/">
+            
+                    
+                        <b>3.2.1.</b>
+                    
+                    Assemble the Dragster Mini
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../assembly-guides/poppy-humanoid/">
             
                 <a href="../assembly-guides/poppy-humanoid/">
             
                     
-                        <b>3.2.</b>
+                        <b>3.3.</b>
                     
                     Assembler Poppy Humanoid
             
@@ -345,12 +456,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.3" data-path="../assembly-guides/poppy-torso/">
+        <li class="chapter " data-level="3.4" data-path="../assembly-guides/poppy-torso/">
             
                 <a href="../assembly-guides/poppy-torso/">
             
                     
-                        <b>3.3.</b>
+                        <b>3.4.</b>
                     
                     Assembler Poppy Torso
             
@@ -723,7 +834,7 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="&#xE0;-laide-des-notebooks-jupyter-en-python">&#xC0; l&#x2019;aide des notebooks Jupyter en Python</h1>
-<p>L&apos;un des avantages de travailler avec les notebooks Jupyter est de pouvoir les utiliser dans une approche client/serveur.<br>Chaque robot Poppy h&#xE9;berge un serveur Jupyter accessible via l&apos;interface web (voir la <a href="../getting-started/program-the-robot.md">section d&#xE9;marrage rapide</a> pour plus de d&#xE9;tails).</p>
+<p>L&apos;un des avantages de travailler avec les notebooks Jupyter est de pouvoir les utiliser dans une approche client/serveur.<br>Chaque robot Poppy h&#xE9;berge un serveur Jupyter accessible via l&apos;interface web (voir la <a href="../getting-started/program-the-robot.html">section d&#xE9;marrage rapide</a> pour plus de d&#xE9;tails).</p>
 <p>Lorsque vous travaillez via une simulation, tout est g&#xE9;r&#xE9; et stock&#xE9; sur votre ordinateur. Lorsque vous travaillez avec un robot physique vous pouvez le programmer depuis un navigateur web sur votre propre ordinateur, mais vos notebooks Jupyter sont en fait stock&#xE9;s et ex&#xE9;cut&#xE9;s dans le robot.</p>
 <p>Donc pour passer de la simulation au robot physique, vous devez passer de votre instance locale Jupyter &#xE0; l&apos;instance h&#xE9;berg&#xE9;e par le robot. Les &#xE9;tapes sont d&#xE9;crites ci-dessous.</p>
 <h2 id="se-connecter-&#xE0;-jupyter-sur-le-robot">Se connecter &#xE0; Jupyter sur le robot</h2>
@@ -743,12 +854,12 @@
 <h3 id="instanciation">Instanciation</h3>
 <p>Lorsque vous cr&#xE9;ez le robot, vous devez en fait pr&#xE9;ciser si vous &#xEA;tes dispos&#xE9; &#xE0; travailler avec un robot physique ou un robot simul&#xE9;. Cela se fait simplement via un param&#xE8;tre. Par exemple :</p>
 <p>En travaillant avec V-REP :</p>
-<pre><code class="lang-python"><span class="hljs-keyword">from</span> poppy.creatures <span class="hljs-keyword">import</span> PoppyHumanoid
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> pypot.creatures <span class="hljs-keyword">import</span> PoppyHumanoid
 
 poppy = PoppyHumanoid(simulator=<span class="hljs-string">&apos;vrep&apos;</span>)
 </code></pre>
 <p>En travaillant avec le robot physique :</p>
-<pre><code class="lang-python"><span class="hljs-keyword">from</span> poppy.creatures <span class="hljs-keyword">import</span> PoppyHumanoid
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> pypot.creatures <span class="hljs-keyword">import</span> PoppyHumanoid
 
 poppy = PoppyHumanoid()
 </code></pre>
@@ -768,10 +879,10 @@ poppy = PoppyHumanoid()
 </code></pre>
 <h2 id="version-et-biblioth&#xE8;ques-tierces">Version et biblioth&#xE8;ques tierces</h2>
 <p>Le principal inconv&#xE9;nient de travail avec le mode client/serveur est que les versions de vos logiciels install&#xE9;s localement peuvent diff&#xE9;rer de celui install&#xE9; sur le robot.</p>
-<p>La version de Python install&#xE9;e sur le robot est Python 2.7 et dispose de la plupart des principales biblioth&#xE8;ques scientifiques (numpy, scipy, matplotlib, opencv). Une liste exhaustive des packages Python install&#xE9;s sera disponible bient&#xF4;t &lt; !--(TODO !)--&gt;. Pour le moment, le moyen le plus simple d&apos;y parvenir est d&#x2019;utilis&#xE9; un <em>terminal notebook</em> qui peut &#xEA;tre ex&#xE9;cut&#xE9; directement depuis l&#x2019;interface de Jupyter.</p>
+<p>La version de Python install&#xE9;e sur le robot est Python 3 et dispose de la plupart des principales biblioth&#xE8;ques scientifiques (numpy, scipy, matplotlib, opencv). Une liste exhaustive des packages Python install&#xE9;s sera disponible bient&#xF4;t &lt; !--(TODO !)--&gt;. Pour le moment, le moyen le plus simple d&apos;y parvenir est d&#x2019;utilis&#xE9; un <em>terminal notebook</em> qui peut &#xEA;tre ex&#xE9;cut&#xE9; directement depuis l&#x2019;interface de Jupyter.</p>
 <p><img src="../img/jupyter/open-terminal.jpg" alt="Ouvrir un terminal"></p>
 <p><img src="../img/jupyter/terminal.jpg" alt="Terminal Jupyter"></p>
-<p>En utilisant la m&#xEA;me technique, vous pouvez installer des biblioth&#xE8;ques tierces directement sur le robot. Les outils utilitaire <a href="https://pip.readthedocs.org" target="_blank">pip</a> et <a href="http://conda.pydata.org/docs/" target="_blank">conda</a> sont install&#xE9;s et devraient &#xEA;tre utilis&#xE9;s lorsque cela est possible.</p>
+<p>En utilisant la m&#xEA;me technique, vous pouvez installer des biblioth&#xE8;ques tierces directement sur le robot. L&apos; outils utilitaire <a href="https://pip.readthedocs.org" target="_blank">pip</a> est install&#xE9; dans un environnement virtuel Python et devrait &#xEA;tre utilis&#xE9; lorsque cela est possible.</p>
 <ul>
 <li>Notez que la carte embarqu&#xE9;e repose sur une architecture armv7 et donc certaines biblioth&#xE8;ques peuvent &#xEA;tre difficiles &#xE0; compiler. Nous maintenons une liste de recettes conda sp&#xE9;cialement con&#xE7;u pour cette plate-forme <a href="https://anaconda.org/poppy-project" target="_blank">ici</a>.<br>Plus de contributions sont les bienvenues ! *
 <div id="page-footer" class="localized-footer"><hr><h4 id="des-questions-">Des questions ?</h4>
@@ -821,7 +932,7 @@ poppy = PoppyHumanoid()
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Programmer avec les notebooks Jupyter","level":"4.2.1","depth":2,"next":{"title":"Snap! sur le robot tangible","level":"4.2.2","depth":2,"path":"from-simulation-to-real-robot/using-snap.md","ref":"from-simulation-to-real-robot/using-snap.md","articles":[]},"previous":{"title":"De la simulation au robot tangible","level":"4.2","depth":1,"path":"from-simulation-to-real-robot/README.md","ref":"from-simulation-to-real-robot/README.md","articles":[{"title":"Programmer avec les notebooks Jupyter","level":"4.2.1","depth":2,"path":"from-simulation-to-real-robot/using-jupyter.md","ref":"from-simulation-to-real-robot/using-jupyter.md","articles":[]},{"title":"Snap! sur le robot tangible","level":"4.2.2","depth":2,"path":"from-simulation-to-real-robot/using-snap.md","ref":"from-simulation-to-real-robot/using-snap.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-search","-share","anchorjs","build","copy-code-button","custom-favicon","download-pdf-link","github","language-picker","localized-footer","page-toc","piwik","richquotes","search-plus","sitemap","toggle-chapters","toggle-headers","youtube"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"piwik":{"jsPath":"piwik.js","phpPath":"piwik.php","URL":"piwik.inria.fr/","siteId":66},"language-picker":{"grid-columns":3},"youtube":{},"github":{"url":"https://github.com/poppy-project/poppy-docs"},"page-toc":{"position":"before-first","selector":".markdown-section h2, .markdown-section h3"},"localized-footer":{"filename":"FOOTER.md","hline":"true"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"toggle-headers":{},"build":{"args":[],"bin":"pandoc","format":"latex","opts":{},"output":"_book/main.tex","template":"_layouts/main.tex"},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{},"highlight":{},"favicon":"img/logo/favicon-128.ico","sitemap":{"hostname":"https://docs.poppy-project.org/"},"custom-favicon":{},"copy-code-button":{},"download-pdf-link":{"label":{"en":"Download PDF","fr":"Télécharger en PDF"},"base":"https://www.gitbook.com/download/pdf/book/poppy-project/poppy-docs","multilingual":true},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["twitter","facebook","google","weibo","instapaper"]},"edit-link":{"base":"https://github.com/poppy-project/poppy-docs/edit/master/","label":{"en":"Edit this page","fr":"Editez cette page"}},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchorjs":{},"toggle-chapters":{},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"poppy_doc_version":"1.0","poppy-humanoid_humanoid_hardware_version":"1.0","poppy-humanoid_humanoid_software_version":"1.0","poppy-torso_hardware_version":"1.0","poppy-torso_software_version":"1.0","poppy-ergo-jr_hardware_version":"1.0","poppy-ergo-jr_software_version":"1.0"},"title":"Documentation of the Poppy Platform","language":"fr","gitbook":"*"},"file":{"path":"from-simulation-to-real-robot/using-jupyter.md","mtime":"2017-10-23T15:46:48.361Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-10-23T15:51:01.667Z"},"basePath":"..","book":{"language":"fr"}});
+            gitbook.page.hasChanged({"page":{"title":"Programmer avec les notebooks Jupyter","level":"4.2.1","depth":2,"next":{"title":"Snap! sur le robot tangible","level":"4.2.2","depth":2,"path":"from-simulation-to-real-robot/using-snap.md","ref":"from-simulation-to-real-robot/using-snap.md","articles":[]},"previous":{"title":"De la simulation au robot tangible","level":"4.2","depth":1,"path":"from-simulation-to-real-robot/README.md","ref":"from-simulation-to-real-robot/README.md","articles":[{"title":"Programmer avec les notebooks Jupyter","level":"4.2.1","depth":2,"path":"from-simulation-to-real-robot/using-jupyter.md","ref":"from-simulation-to-real-robot/using-jupyter.md","articles":[]},{"title":"Snap! sur le robot tangible","level":"4.2.2","depth":2,"path":"from-simulation-to-real-robot/using-snap.md","ref":"from-simulation-to-real-robot/using-snap.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-search","-share","anchorjs","build","copy-code-button","custom-favicon","download-pdf-link","github","language-picker","localized-footer","page-toc","piwik","richquotes","search-plus","sitemap","toggle-chapters","toggle-headers","youtube"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"piwik":{"jsPath":"piwik.js","phpPath":"piwik.php","URL":"piwik.inria.fr/","siteId":66},"language-picker":{"grid-columns":3},"youtube":{},"github":{"url":"https://github.com/poppy-project/poppy-docs"},"page-toc":{"position":"before-first","selector":".markdown-section h2, .markdown-section h3","showByDefault":true},"localized-footer":{"filename":"FOOTER.md","hline":"true"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"toggle-headers":{},"build":{"args":[],"bin":"pandoc","format":"latex","opts":{},"output":"_book/main.tex","template":"_layouts/main.tex"},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{},"highlight":{},"favicon":"img/logo/favicon-128.ico","sitemap":{"hostname":"https://docs.poppy-project.org/"},"custom-favicon":{},"copy-code-button":{},"download-pdf-link":{"label":{"en":"Download PDF","fr":"Télécharger en PDF"},"base":"https://www.gitbook.com/download/pdf/book/poppy-project/poppy-docs","multilingual":true},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["twitter","facebook","google","weibo","instapaper"]},"edit-link":{"base":"https://github.com/poppy-project/poppy-docs/edit/master/","label":{"en":"Edit this page","fr":"Editez cette page"}},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchorjs":{},"toggle-chapters":{},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"poppy_doc_version":"1.0","poppy-humanoid_humanoid_hardware_version":"1.0","poppy-humanoid_humanoid_software_version":"1.0","poppy-torso_hardware_version":"1.0","poppy-torso_software_version":"1.0","poppy-ergo-jr_hardware_version":"1.0","poppy-ergo-jr_software_version":"1.0"},"title":"Documentation of the Poppy Platform","language":"fr","gitbook":"*"},"file":{"path":"from-simulation-to-real-robot/using-jupyter.md","mtime":"2020-08-25T16:43:49.284Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-25T16:44:47.238Z"},"basePath":"..","book":{"language":"fr"}});
         });
     </script>
 </div>
@@ -832,7 +943,7 @@ poppy = PoppyHumanoid()
     <script src="../../gitbook/theme.js"></script>
     
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.1.1/anchor.min.js"></script>
+        <script src="../../gitbook/gitbook-plugin-anchorjs/anchor.min.js"></script>
         
     
         

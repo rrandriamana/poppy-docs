@@ -411,12 +411,48 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2" data-path="../poppy-humanoid/">
+        <li class="chapter " data-level="3.2" data-path="../poppycustom/">
+            
+                <a href="../poppycustom/">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    Custom your Ergo Jr
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="../poppycustom/dragster-mini/">
+            
+                <a href="../poppycustom/dragster-mini/">
+            
+                    
+                        <b>3.2.1.</b>
+                    
+                    Assemble the Dragster Mini
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../poppy-humanoid/">
             
                 <a href="../poppy-humanoid/">
             
                     
-                        <b>3.2.</b>
+                        <b>3.3.</b>
                     
                     Assemble the Poppy Humanoid
             
@@ -426,12 +462,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.3" data-path="../poppy-torso/">
+        <li class="chapter " data-level="3.4" data-path="../poppy-torso/">
             
                 <a href="../poppy-torso/">
             
                     
-                        <b>3.3.</b>
+                        <b>3.4.</b>
                     
                     Assemble the Poppy Torso
             
@@ -804,10 +840,23 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="motor-configuration">Motor configuration</h1>
-<p>Ergo Jr is made of 6 XL-320 motors from <a href="http://support.robotis.com/en/product/dynamixel/xl-series/xl-320.htm" target="_blank">Robotis</a>. Each of this servomotor embeds an electronic board allowing it to receive different kind of orders (about position, speed, torque...) and to communicate with other servos. Therefore, you can chain up several of this servomotors and command them all from one end of the chain: each servomotor will pass the orders to the next one.</p>
-<p><img src="img/assembly/xl_320.jpg" alt="XL320" height="300"></p>
-<p>Yet, in order for the motors to be connected and identified on the same bus (same line), they must have a unique ID. Out of the factory they all set to the same ID: 1. In this section, we will give you details on how you can set a new and unique ID to each of your motors.</p>
+<p>Ergo Jr is made of 6 XL-320 motors from <a href="http://www.robotis.us/dynamixel-xl-320/" target="_blank">Robotis</a>. Each of this servomotor embeds an electronic board allowing it to receive different kind of orders (about position, speed, torque...) and to communicate with other servos. Therefore, you can chain up several of this servomotors and command them all from one end of the chain: each servomotor will pass the orders to the next one.</p>
+<p><img src="img/assembly/xl_320.jpg" alt="XL320" height="150"></p>
+<p>Yet, in order for the motors to be connected and identified on the same bus (same line), they must have a unique ID. Out of the factory they all set to the same ID (1). In this section, we will give you details on how you can set a new and unique ID to each of your motors.</p>
 <p>We recommend to configure motors in parallel of the hardware assembly. Meaning, that before assembling a new motor, you first configure it, then assemble to the rest of your robot. In the step-by-step assembly procedure, we will point out each time you need to configure a new motor.</p>
+<h2 id="turn-on-the-robot">Turn on the robot</h2>
+<p>If you use Windows (not needed or Mac OSX) you&apos;ll first <strong>need to install Bonjour/Zeroconf (<a href="https://support.apple.com/kb/DL999" target="_blank">download link for Windows</a>)</strong> or <strong>avahi</strong> to be able to connect to the robot.
+Look at <a href="../../installation/install-zeroconf.html">Bonjour/Zeroconf protocol</a> dedicated page for more details.</p>
+<p><strong>Turn on the robot</strong>, with or without connected motors:</p>
+<ul>
+<li>plug the Ethernet cable (RJ45) from the robot to your Internet box or router. Note: it is also possible to connect the cable directly to your computer bu your OS might require additionnal configuration so the first solution is preferred. </li>
+<li>plug the DC power on the pixl board</li>
+</ul>
+<p><strong>Note:</strong> NEVER plug another power supply (such as a micro-USB cable) cable while the DC power is connected.</p>
+<p>Your robot boots up... check that the green LED <strong>ACT</strong> of the Raspberry Pi flickers during about 30 seconds. If it doesn&apos;t, then your SD card might be missing or faulty.
+From your computer, you can now open a web browser (Firefox, Chrome, Edge, ...) and load the following URL in the address bar; <a href="http://poppy.local" target="_blank">http://poppy.local</a>.</p>
+<p>The robot&apos;s first page should load. If it does not and shows an error like below, check that you entered the <strong>http://</strong> prefix, and check that Bonjour is installed if you are running Windows. Otherwise your network might be misconfigured: try with another router or try a direct connection of the robot to your computer.</p>
+<p><img src="img/IHM/webpage_not_available.jpg" alt="Page doesn&apos;t exist"></p>
 <h2 id="configuring-motors-one-at-a-time">Configuring motors one at a time</h2>
 <p>As explained above, all motors have the same ID by default. <strong>Only one motor at a time should be connected to the data bus when you configure them.</strong> Otherwise, it will not work as all motors connected will think that the order sent on the line is intended for them, they will all try to answer resulting in a big mess.</p>
 <p>Your electronic setup when configuring a motor should look like this:</p>
@@ -818,29 +867,22 @@
 <li>an Ethernet cable going from the Raspberry Pi to your computer or your router</li>
 </ul>
 <p><img src="img/motor_one_by_one.jpg" alt="XL-320 configuration ; one motor at a time">.</p>
-<h3 id="command-line-utility">Command-line utility</h3>
-<p>Robots come with a command line utility <code>poppy-configure</code> ; to use it you need to open a terminal on your Raspberry Pi.</p>
-<p>You can access to the Raspberry Pi directly from your computer. To do so, open the page <a href="http://poppy.local" target="_blank">http://poppy.local</a> in a web browser.</p>
-<blockquote class="clearfix alert alert-warning"><strong class="fa fa-2x fa-exclamation-triangle"></strong>
-<p> If you are using Windows, you need to install <a href="https://support.apple.com/kb/DL999" target="_blank">Bonjour</a> (look at <a href="../../installation/install-zeroconf.html">Zeroconf protocol</a> for details) to be able to connect to the robot from its hostname. If Bonjour is not present, you will have an error message like the one below. If Bonjour is installed and the issue still present, please re-install it.</p>
-<p><img src="img/IHM/webpage_not_available.jpg" alt="Page doesn&apos;t exist"></p>
-</blockquote>
-<p>If everything goes well, you should see the Poppy home page:</p>
-<p><img src="img/IHM/accueil_poppy_local.PNG" alt="Poppy home page"></p>
-<p>Click on the <strong>&quot;Jupyter &#x2014; Python, Terminal&quot;</strong> link and after, select on the right &quot;New&quot; and &quot;Terminal&quot;.
-<img src="img/IHM/jupyter_new_terminal.png" alt="Jupyter terminal" height="300"></p>
-<p>You have now access to the Terminal:</p>
-<p><img src="img/IHM/terminal_for_configuration.PNG" alt="terminal for configuration"></p>
-<p>Once the terminal is open, copy and press enter to execute the command bellow.</p>
-<pre><code class="lang-bash">poppy-configure ergo-jr m1
-</code></pre>
-<p>You have now configured the m1 motor of your robot.
-Once configured and that you see the message indicating that everything went well, you can unplug the motor (you don&apos;t need to turn off the card). The configuration of the motor is stored in its internal memory (eprom).</p>
-<blockquote class="clearfix alert alert-info"><strong class="fa fa-2x fa-info"></strong>
-<p> Poppy Ergo Jr motors are named m1, m2, m3, m4, m5, m6. To configure the others motors, you have to change m1 by the name of the motor you want to configure in the command above.</p>
-</blockquote>
+<h2 id="configure-your-robot">Configure your robot</h2>
+<p>At first boot, your robot guides you for its initial configuration. Just follow the proposed steps. One of the most important step is the motor configuration.</p>
+<p>During this step, a single motor must be connected to the Pixl board so that it is configured with its right motor name <strong>m1, m2, m3, m4, m5 or m6</strong> as shown on the image hereunder:</p>
 <p><img src="img/assembly/motors.png" alt="Motors list" height="300"></p>
-<p><div id="page-footer" class="localized-footer"><hr><h4 id="questions-">Questions ?</h4>
+<p>Each motor must be plugged <strong>alone</strong> and configured one atfer the other by selecting its name and clicking the button <strong>Configure</strong>. Factory motors are 100% identical, this is your role to pay attention to the name you attribute to each motor so that you mount it at the right location.</p>
+<p>During the motor configuration, you must have plugged <strong>only</strong> the folliwing elements:</p>
+<ul>
+<li>the Raspberry Pi</li>
+<li>the Pixl board with its DC power supply</li>
+<li>Only 1 motor cable (black cable with 3 wires) coming from the Pixl board to the unique motor to be configured</li>
+<li>the Ethernet cable connecting your Raspberry Pi to the network</li>
+</ul>
+<p><img src="img/motor_one_by_one.jpg" alt="XL-320 configuration ; one motor at a time">.</p>
+<p>After configuring each one of the 6 motors, you can plug them normally with motor cable, all chained one to the other. The, click on the proposed button to test your robot by make it dance! If the dance does not start, restart the individual motor configuration ; help yourself with the potential error messages that say what is going on. </p>
+<p>At the end of the first connection, you reach the home page of your robot. Have fun!
+<div id="page-footer" class="localized-footer"><hr><h4 id="questions-">Questions ?</h4>
 <p>We&apos;re always happy to help with code or other questions you might have! You can ask questions and share solutions on our <a href="https://forum.poppy-project.org" target="_blank">community Forum</a>.</p>
 </div></p>
 
@@ -886,7 +928,7 @@ Once configured and that you see the message indicating that everything went wel
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Motor configuration","level":"3.1.2","depth":2,"next":{"title":"Hardware construction","level":"3.1.3","depth":2,"path":"assembly-guides/ergo-jr/mechanical-construction.md","ref":"assembly-guides/ergo-jr/mechanical-construction.md","articles":[]},"previous":{"title":"Electronic assembly","level":"3.1.1","depth":2,"path":"assembly-guides/ergo-jr/electronic-assembly.md","ref":"assembly-guides/ergo-jr/electronic-assembly.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-share","anchorjs","build","copy-code-button","custom-favicon","download-pdf-link","github","language-picker","localized-footer","page-toc","piwik","richquotes","search-plus","sitemap","toggle-chapters","toggle-headers","youtube"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"piwik":{"jsPath":"piwik.js","phpPath":"piwik.php","URL":"piwik.inria.fr/","siteId":66},"language-picker":{"grid-columns":3},"youtube":{},"github":{"url":"https://github.com/poppy-project/poppy-docs"},"page-toc":{"position":"before-first","selector":".markdown-section h2, .markdown-section h3"},"localized-footer":{"filename":"FOOTER.md","hline":"true"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"toggle-headers":{},"build":{"args":[],"bin":"pandoc","format":"latex","opts":{},"output":"_book/main.tex","template":"_layouts/main.tex"},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{},"highlight":{},"favicon":"img/logo/favicon-128.ico","sitemap":{"hostname":"https://docs.poppy-project.org/"},"custom-favicon":{},"copy-code-button":{},"download-pdf-link":{"label":{"en":"Download PDF","fr":"Télécharger en PDF"},"base":"https://www.gitbook.com/download/pdf/book/poppy-project/poppy-docs","multilingual":true},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["twitter","facebook","google","weibo","instapaper"]},"edit-link":{"base":"https://github.com/poppy-project/poppy-docs/edit/master/","label":{"en":"Edit this page","fr":"Editez cette page"}},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchorjs":{},"toggle-chapters":{},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"poppy_doc_version":"1.0","poppy-humanoid_humanoid_hardware_version":"1.0","poppy-humanoid_humanoid_software_version":"1.0","poppy-torso_hardware_version":"1.0","poppy-torso_software_version":"1.0","poppy-ergo-jr_hardware_version":"1.0","poppy-ergo-jr_software_version":"1.0"},"title":"Documentation of the Poppy Platform","language":"en","gitbook":"*"},"file":{"path":"assembly-guides/ergo-jr/motor-configuration.md","mtime":"2017-10-23T15:46:48.217Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-10-23T15:51:01.667Z"},"basePath":"../..","book":{"language":"en"}});
+            gitbook.page.hasChanged({"page":{"title":"Motor configuration","level":"3.1.2","depth":2,"next":{"title":"Hardware construction","level":"3.1.3","depth":2,"path":"assembly-guides/ergo-jr/mechanical-construction.md","ref":"assembly-guides/ergo-jr/mechanical-construction.md","articles":[]},"previous":{"title":"Electronic assembly","level":"3.1.1","depth":2,"path":"assembly-guides/ergo-jr/electronic-assembly.md","ref":"assembly-guides/ergo-jr/electronic-assembly.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-share","anchorjs","build","copy-code-button","custom-favicon","download-pdf-link","github","language-picker","localized-footer","page-toc","piwik","richquotes","search-plus","sitemap","toggle-chapters","toggle-headers","youtube"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"piwik":{"jsPath":"piwik.js","phpPath":"piwik.php","URL":"piwik.inria.fr/","siteId":66},"language-picker":{"grid-columns":3},"youtube":{},"github":{"url":"https://github.com/poppy-project/poppy-docs"},"page-toc":{"position":"before-first","selector":".markdown-section h2, .markdown-section h3","showByDefault":true},"localized-footer":{"filename":"FOOTER.md","hline":"true"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"toggle-headers":{},"build":{"args":[],"bin":"pandoc","format":"latex","opts":{},"output":"_book/main.tex","template":"_layouts/main.tex"},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{},"highlight":{},"favicon":"img/logo/favicon-128.ico","sitemap":{"hostname":"https://docs.poppy-project.org/"},"custom-favicon":{},"copy-code-button":{},"download-pdf-link":{"label":{"en":"Download PDF","fr":"Télécharger en PDF"},"base":"https://www.gitbook.com/download/pdf/book/poppy-project/poppy-docs","multilingual":true},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["twitter","facebook","google","weibo","instapaper"]},"edit-link":{"base":"https://github.com/poppy-project/poppy-docs/edit/master/","label":{"en":"Edit this page","fr":"Editez cette page"}},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchorjs":{},"toggle-chapters":{},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"poppy_doc_version":"1.0","poppy-humanoid_humanoid_hardware_version":"1.0","poppy-humanoid_humanoid_software_version":"1.0","poppy-torso_hardware_version":"1.0","poppy-torso_software_version":"1.0","poppy-ergo-jr_hardware_version":"1.0","poppy-ergo-jr_software_version":"1.0"},"title":"Documentation of the Poppy Platform","language":"en","gitbook":"*"},"file":{"path":"assembly-guides/ergo-jr/motor-configuration.md","mtime":"2020-08-25T16:43:49.100Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-25T16:44:47.238Z"},"basePath":"../..","book":{"language":"en"}});
         });
     </script>
 </div>
@@ -897,7 +939,7 @@ Once configured and that you see the message indicating that everything went wel
     <script src="../../../gitbook/theme.js"></script>
     
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.1.1/anchor.min.js"></script>
+        <script src="../../../gitbook/gitbook-plugin-anchorjs/anchor.min.js"></script>
         
     
         
