@@ -51,6 +51,7 @@
     - [Programming with Snap!](programming/snap.md)
     - [Usage of Jupyter notebooks](programming/notebooks.md)
     - [Programming in Python](programming/python.md)
+    - [Programming with Scratch](programming/scratch.md)
     - [Robots APIs](programming/rest.md)
     - [Activities](demo-activities/README.md)
     - [Link with Snap4Arduino](demo-activities/snap4arduino.md)

@@ -68,6 +68,7 @@ The web interface is the central point to control, program and configure your ro
 * Monitor and Control the robot
 * Program it in [Snap!](http://snap.berkeley.edu)
 * Program it in [Python](https://www.python.org)
+* Program it in [Scratch](https://scratch.mit.edu/)
 * Configure the robot (change its name, enable/disable the camera, update)
 * Reset and shutdown the robot
 

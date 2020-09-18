@@ -2,6 +2,7 @@
 
 Poppy robots are designed to be easily programmed. They are three main options presented here:
 * using [Snap!](#using-snap), a variant of Scratch the visual programming language,
+* using [Scratch](#using-scratch),
 * using [Python](#using-python) and leveraging the power of the whole API,
 * through the [REST API](#through-the-rest-api) which let you  interface Poppy robots with other devices or any programming language.
 
@@ -19,6 +20,18 @@ Snap_!_ is a visual programming language - a variant of the very famous Scratch 
 We developed a set of custom blocks for Poppy robots that let you send motor commands and read values from the sensors of your robot. This let you to directly jump into controlling and programming your robot without any syntax/compilation issue. Thanks to Snap_!_ live interaction loop you simply have to click on a block to send its associated command to the robot. Snap_!_ also naturally scales to more complex projects.
 
 A [dedicated chapter](../programming/snap.md) will guide you in what you can do with Snap_!_ and Poppy robots.
+
+## Using Scratch
+
+<img src="../img/logo/scratch.png" alt="Scratch logo" height="200">
+
+Scratch is a visual programming language. It is a block based drag-and-drop programming language that allows for a thorough introduction of IT. It runs in your browser as it is implemented in JavaScript. You do not need to install anything to start using it for a basic use but if you want to use it for a Poppy creature follow these [instructions](https://github.com/poppy-project/scratch-poppy/blob/master/README.md). It is open sourced and actively maintained.
+
+![Example of Scratch project using Poppy](../img/scratch/presentation.png)
+
+We developed a set of custom blocks for Poppy robots that let you send motor commands and read values from the sensors of your robot. This let you to directly jump into controlling and programming your robot without any syntax/compilation issue. Thanks to Scratch live interaction loop you simply have to click on a block to send its associated command to the robot. Scratch also naturally scales to more complex projects.
+
+A [dedicated chapter](../programming/scratch.md) will guide you in what you can do with Scratch and Poppy robots.
 
 ## Using Python
 
@@ -50,7 +63,7 @@ Most of the tutorials, experiments or pedagogical activities that we and the com
 
 ## Through the REST API
 
-On top of the Snap_!_ and Python options, we wanted to provide another way of accessing and controlling your robot from any device or language. Poppy robots are providing a REST API. The most important features of the robot can be access through HTTP GET/POST requests.
+On top of the Snap_!_, Scratch and Python options, we wanted to provide another way of accessing and controlling your robot from any device or language. Poppy robots are providing a REST API. The most important features of the robot can be access through HTTP GET/POST requests.
 
 From a more practical point of view, this allows you to:
 

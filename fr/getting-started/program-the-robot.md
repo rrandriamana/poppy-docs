@@ -1,6 +1,6 @@
 # Programmer le robot
 
-Les robots Poppy sont pensés pour être programmé facilement. Voici les trois principales façons d'y parvenir : * avec la programmation visuelle [Snap!](#using-snap), une variante de Scratch, * avec [Python](#using-python) et la possibilité de s'appuyer sur la puissance de l'API tout entière, * avec [REST API](#through-the-rest-api), qui permet de connecter les robots Poppy à d'autres outils ou d'utiliser n'importe quel langage de programmation.
+Les robots Poppy sont pensés pour être programmé facilement. Voici les trois principales façons d'y parvenir : * avec la programmation visuelle [Snap!](#using-snap), une variante de Scratch, * avec la programmation visuelle [Scratch](#using-scratch) * avec [Python](#using-python) et la possibilité de s'appuyer sur la puissance de l'API tout entière, * avec [REST API](#through-the-rest-api), qui permet de connecter les robots Poppy à d'autres outils ou d'utiliser n'importe quel langage de programmation.
 
 > **Important** : Tout comme le reste du projet, toute notre bibliothèque logiciel est open source (Licence GPLv3) et disponible sur [GitHub](https://github.com/poppy-project).
 
@@ -15,6 +15,18 @@ Snap_!_ est un langage de programmation visuel - une variante du déjà très co
 Nous avons créé plusieurs blocs propre à l'utilisation des robots Poppy qui permettent de contrôler chaque moteur et de lire les valeurs rapportées par les capteurs de votre robot. This let you to directly jump into controlling and programming your robot without any syntax/compilation issue. Snap_!_ permet d'avoir une interactivité constante entre son interface et le robot. Vous n'avez qu'à cliquer sur un bloc et la commande associée se lance. La simplicité apparente de Snap_!_ n'empêche pas de développer des projets de plus en plus complexes.
 
 Pour avoir un aperçu de ce qu'il est possible de faire avec Snap_!_ et les robots Poppy, jetez un oeil au [chapitre dédié](../programming/snap.md).
+
+## Avec Scratch
+
+<img src="../img/logo/scratch.png" alt="Logo Scartch" height="200" />
+
+Scratch est un langage de programmation visuel. C'est un langage de programmation basé sur l'utilisation de blocs facilement déplaçable, qui permet une bonne introduction à l'informatique. Il s'exécute dans votre navigateur grâce à son implémentation en JavaScript. Vous n'avez pas besoin d'installer quoi que ce soit pour utiliser la version de base de Scratch. Cependant si vous voulez l'utiliser pour la programmation d'un robot Poppy, il faut suivre ces [instructions](https://github.com/poppy-project/scratch-poppy). Il est open source et mis à jour régulièrement.
+
+![Exemple de projet Scratch utilisant un robot Poppy](../img/scratch/presentation.png)
+
+Nous avons créé plusieurs blocs propre à l'utilisation des robots Poppy qui permettent de contrôler chaque moteur et de lire les valeurs rapportées par les capteurs de votre robot. TIl vous permet de passer directement au contrôle et à la programmation de votre robot sans aucun problème de syntaxe / compilation. Scratch permet d'avoir une interactivité constante entre son interface et le robot. Vous n'avez qu'à cliquer sur un bloc et la commande associée se lance. La simplicité apparente de Scratch n'empêche pas de développer des projets de plus en plus complexes.
+
+Pour avoir un aperçu de ce qu'il est possible de faire avec Scratch et les robots Poppy, jetez un oeil au [chapitre dédié](../programming/scratch.md).
 
 ## Avec Python
 
@@ -47,7 +59,7 @@ La plupart des tutoriels, expérimentations et activités pédagogiques que la c
 
 ## Avec l'API REST
 
-En plus de Snap_!_ et de Python, nous voulions donner la possibilité de recourir à d'autres options pour accéder et contrôler votre robot depuis n'importe quel système ou langage de programmation. Les robots Poppy fournissent une API REST. Les fonctionnalités les plus importantes sont accessibles depuis les requêtes HTTP GET/POST.
+En plus de Snap_!_, Scratch et de Python, nous voulions donner la possibilité de recourir à d'autres options pour accéder et contrôler votre robot depuis n'importe quel système ou langage de programmation. Les robots Poppy fournissent une API REST. Les fonctionnalités les plus importantes sont accessibles depuis les requêtes HTTP GET/POST.
 
 D'un point vue plus pratique, cela vous permet de :
 

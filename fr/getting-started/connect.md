@@ -56,7 +56,7 @@ Pour vérifier que tout est correctement configuré, vous pouvez accéder à l'u
 
 ### Utiliser l'interface web
 
-L'interface web est le point central pour contrôler, programmer et configurer votre robot. Il peut être utilisé pour: * Surveiller et contrôler le robot * Programmer le robot en [Snap!](http://snap.berkeley.edu) * Programmer le robot en [Python](https://www.python.org) * Configurer le robot (changer son nom, activer/désactiver la caméra, faire une mise à jour) * Réinitialiser et éteindre le robot
+L'interface web est le point central pour contrôler, programmer et configurer votre robot. Il peut être utilisé pour: * Surveiller et contrôler le robot * Programmer le robot en [Snap!](http://snap.berkeley.edu) * Programmer le robot en [Scratch](https://scratch.mit.edu/) * Programmer le robot en [Python](https://www.python.org) * Configurer le robot (changer son nom, activer/désactiver la caméra, faire une mise à jour) * Réinitialiser et éteindre le robot
 
 Pour accéder à cette interface web, il vous suffit d'accéder à l'URL à l'aide de votre navigateur Web préféré :
 
