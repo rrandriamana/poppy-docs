@@ -70,7 +70,9 @@ It is now possible to create your own block by a combinaison of many blocks in S
 
 You can choose three different options for your block : 
 - Add an argument : it could be a number, a string or a Reporter block as 
+
 ![reporter](../img/scratch/reporter.png)
+
 - Add an boolean argument
 - Add text or labels
 
@@ -78,13 +80,18 @@ You can choose three different options for your block :
 ![button option](../img/scratch/button_option.png)
 
 For exemple if you want to create a block which plays a move and swicth on some LEDs of some motors, you can do it as it is shown below. 
+
 ![own button](../img/scratch/own_button.png)
 
 > **Info** If you use a reporter block from the poppy extension in a command block 
-![command](../img/scratch/command.png)
- outside the poppy category block, you will have to use the "transform to string" button 
- ![string button](../img/scratch/scratch_blocks/transform_string.png) 
- as you can see above.
+>
+> ![command](../img/scratch/command.png)
+>
+> outside the poppy category block, you will have to use the "transform to string" button 
+>
+> ![string button](../img/scratch/scratch_blocks/transform_string.png) 
+>
+> as you can see above.
 
 ## Description of Poppy blocks
 |                                                            | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |

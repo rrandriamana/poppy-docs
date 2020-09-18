@@ -54,7 +54,7 @@ Cliquez sur "Poppy" et tous les blocs devraient apparaître dans la catégorie P
 
 #### Connexion
 
-Connectez d'abord Scratch à votre robot avec le bloc "se connecter à". La variable hôte doit être l'adresse IP ou le nom d'hôte + ". Local" de votre robot. Testez ensuite votre connexion avec le robot (tangible ou simulé) avec le bloc «test de la connexion».
+Connectez d'abord Scratch à votre robot avec le bloc "se connecter à". La variable hôte doit être l'adresse IP ou le nom d'hôte + ". Local" de votre robot. Testez ensuite votre connexion avec le robot (tangible ou simulé) avec le bloc «test de la connexion»
 
 ![connection](../img/scratch/connection.png)
 
@@ -82,14 +82,14 @@ Par exemple, si vous souhaitez créer un bloc qui joue un mouvement et allume ce
 ![own button](../img/scratch/own_button.png)
 
 > **Info** Si vous utilisez un bloc reporter de l'extension poppy dans un bloc de commande 
-
-![command](../img/scratch/command.png) 
-
-en dehors du bloc de catégorie poppy, vous devrez utiliser le bouton "transformer en string" 
-
-![string button](../img/scratch/scratch_blocks/transform_string.png) 
-
-comme vous pouvez le voir ci-dessus.
+>
+> ![command](../img/scratch/command.png) 
+>
+> en dehors du bloc de catégorie poppy, vous devrez utiliser le bouton "transformer en string" 
+>
+> ![string button](../img/scratch/scratch_blocks/transform_string.png) 
+>
+> comme vous pouvez le voir ci-dessus.
 
 ## Description des blocs Poppy
 |                                                            | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
