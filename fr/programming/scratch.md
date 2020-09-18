@@ -22,6 +22,7 @@ Tout d'abord, vous devez être connecté au même réseau que votre robot (par e
 Vous devez vous rendre sur la page d'accueil Web de votre robot avec son URL. Vous pouvez utiliser son adresse IP (par exemple http://192.168.1.42) si vous avez un moyen de la connaître ou son nom d'hôte comme http://poppy.local. Pour trouver son adresse IP, regardez [le chapitre zeroconf](../installation/install-zeroconf.md#alternatives-to-find-the-ip-address-of-a-computer-on-your-local-network). Pour utiliser directement son nom d'hôte http://poppy.local vous devez avoir un logiciel Zeroconf installé sur votre ordinateur (aka ["Bonjour print services for Windows"](https://support.apple.com/kb/DL999?locale=en_US) si vous utilisez Windows).
 
 La page d'accueil de votre robot Poppy doit ressembler à l'image ci-dessous:
+
 ![find blocks](../img/scratch/homepage.png)
 
 Appuyez sur le bouton "Programming" puis "Scratch" pour ouvrir l'interface Scratch.
@@ -35,40 +36,60 @@ Il est possible de changer la langue avec le bouton sphère, à droite du logo S
 
 ![Save click](../img/scratch/scratch_save.png)
 
-Comme ce Scratch est tourne entant que machine virtuelle, vous ne pouvez enregistrer et importer vos projets que sur votre ordinateur.
+Comme ce Scratch tourne entant que machine virtuelle, vous ne pouvez enregistrer et importer vos projets que sur votre ordinateur.
 
-> **Warning** Il n'est pas possible de partager votre projet sur le cloud car les extensions non officielles ne sont pas encore prises en charge sur Scratch 3.0.
+> **Attention** Il n'est pas possible de partager votre projet sur le cloud car les extensions non officielles ne sont pas encore prises en charge sur Scratch 3.0.
 
 ### Charger les blocs Poppy
 
 Les blocs spéciaux Poppy sont stockés dans l'extension "Poppy". Appuyez sur le bouton bleu "Ajouter une extension" dans le coin inférieur gauche. 
+
 ![add extension](../img/scratch/add_extension.png)
+
 Cliquez sur "Poppy" et tous les blocs devraient apparaître dans la catégorie Poppy.
+
 ![poppy extension](../img/scratch/poppy_extension.png)
+
 ![poppy category](../img/scratch/poppy_category.png)
 
 #### Connexion
 
 Connectez d'abord Scratch à votre robot avec le bloc "se connecter à". La variable hôte doit être l'adresse IP ou le nom d'hôte + ". Local" de votre robot. Testez ensuite votre connexion avec le robot (tangible ou simulé) avec le bloc «test de la connexion».
-![connection](../img/scratch/connection.png).
-si le bloc vous renvoie "You may have connection troubles", votre variable "hôte" dans le projet Scratch est probablement erronée.
+
+![connection](../img/scratch/connection.png)
+
+Si le bloc vous renvoie "You may have connection troubles", votre variable "hôte" dans le projet Scratch est probablement erronée.
 
 
 ### Créez vos propre blocs !
 
 Il est maintenant possible de créer votre propre bloc par une combinaison de plusieurs blocs dans Scratch 3.0. Il existe une catégorie Mes blocs pour créer un bloc.
+
 ![create block](../img/scratch/create_block.png)
 
 Vous pouvez choisir trois options différentes pour votre bloc:
-- Ajouter un argument: il peut s'agir d'un nombre, d'une chaîne ou d'un bloc Reporter comme ![reporter](../img/scratch/reporter.png)
+- Ajouter un argument: il peut s'agir d'un nombre, d'une chaîne ou d'un bloc Reporter comme 
+
+![reporter](../img/scratch/reporter.png)
+
 - Ajouter un argument booléen
 - Ajouter du texte
+
 ![button option](../img/scratch/button_option.png)
 
 Par exemple, si vous souhaitez créer un bloc qui joue un mouvement et allume certaines LEDs de certains moteurs, vous pouvez le faire comme indiqué ci-dessous.
+
 ![own button](../img/scratch/own_button.png)
 
-> **Info** Si vous utilisez un bloc reporter de l'extension poppy dans un bloc de commande ![command](../img/scratch/command.png) en dehors du bloc de catégorie poppy, vous devrez utiliser le bouton "transformer en string" ![string button](../img/scratch/scratch_blocks/transform_string.png) comme vous pouvez le voir ci-dessus.
+> **Info** Si vous utilisez un bloc reporter de l'extension poppy dans un bloc de commande 
+
+![command](../img/scratch/command.png) 
+
+en dehors du bloc de catégorie poppy, vous devrez utiliser le bouton "transformer en string" 
+
+![string button](../img/scratch/scratch_blocks/transform_string.png) 
+
+comme vous pouvez le voir ci-dessus.
 
 ## Description des blocs Poppy
 |                                                            | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |

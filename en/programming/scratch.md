@@ -23,6 +23,7 @@ First, you must be connected to the same network LAN area than your robot (e.g. 
 You have to go on the web homepage of your robot with its URL. You can use its IP address (for example http://192.168.1.42) if you have a way to know it or its hostname like http://poppy.local. To find its IP address look at [the zeroconf chapter](../installation/install-zeroconf.md#alternatives-to-find-the-ip-address-of-a-computer-on-your-local-network). To use directly its hostname http://poppy.local you must have a Zeroconf software installed on your computer (aka ["Bonjour print services for Windows"](https://support.apple.com/kb/DL999?locale=en_US) if you are running Windows).
 
 The home page of your poppy creature should look like the snapshot below:
+
 ![find blocks](../img/scratch/homepage.png)
 
 Click on the "Programming" button then "Scratch" link to open the Scratch interface.
@@ -43,33 +44,47 @@ As this Scratch is a Virtual Machine, you can save and import your project only 
 ### Launch Poppy blocks
 
 Poppy special blocks are stored in the Extension "Poppy". Push the Add Extension blue button at the lower left corner. 
+
 ![add extension](../img/scratch/add_extension.png)
+
 Click on "Poppy" and all the blocks should appear in the Poppy category.
+
 ![poppy extension](../img/scratch/poppy_extension.png)
+
 ![poppy category](../img/scratch/poppy_category.png)
 
 #### Network
 
 First connect Scratch to your robot with the "set host" block. The host variable must be the IP or the hostname+".local" of your robot. Then test your connection with the (tangible or simulated) robot with the "test connection" block.
+
 ![connection](../img/scratch/connection.png).
+
 if the block answer is "You may have connection troubles", your "host" variable inside the Scratch project is probably wrong. 
 
 
 ### Build your own blocks!
 
 It is now possible to create your own block by a combinaison of many blocks in Scratch 3.0. There is a My Blocks category to make a block.
+
 ![create block](../img/scratch/create_block.png)
 
 You can choose three different options for your block : 
-- Add an argument : it could be a number, a string or a Reporter block as ![reporter](../img/scratch/reporter.png)
+- Add an argument : it could be a number, a string or a Reporter block as 
+![reporter](../img/scratch/reporter.png)
 - Add an boolean argument
 - Add text or labels
+
+
 ![button option](../img/scratch/button_option.png)
 
 For exemple if you want to create a block which plays a move and swicth on some LEDs of some motors, you can do it as it is shown below. 
 ![own button](../img/scratch/own_button.png)
 
-> **Info** If you use a reporter block from the poppy extension in a command block ![command](../img/scratch/command.png) outside the poppy category block, you will have to use the "transform to string" button ![string button](../img/scratch/scratch_blocks/transform_string.png) as you can see above.
+> **Info** If you use a reporter block from the poppy extension in a command block 
+![command](../img/scratch/command.png)
+ outside the poppy category block, you will have to use the "transform to string" button 
+ ![string button](../img/scratch/scratch_blocks/transform_string.png) 
+ as you can see above.
 
 ## Description of Poppy blocks
 |                                                            | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
